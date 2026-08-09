@@ -1,6 +1,9 @@
 {{/* The sidebar is the whole archive: every year expandable to its posts.
      The most recent year is open by default, and so is the year of the post
-     being read, so you always see where you are. */}}
+     being read, so you always see where you are.
+
+     Collapsing is driven from the button below, which stays put when the
+     column shrinks to a rail so it can be reopened. */}}
 
 {{- $posts := where site.RegularPages "Section" "posts" -}}
 {{- $byYear := $posts.GroupByDate "2006" -}}
@@ -9,35 +12,43 @@
 {{- $here := "" -}}
 {{- if and .IsPage (eq .Section "posts") }}{{ $here = .Date.Format "2006" }}{{ end -}}
 
-<aside class="site-sidebar" id="archive-nav">
-  <nav aria-label="Archive">
-    <h2 class="sidebar-heading">
-      {{ len $posts }} posts
-      <span class="sidebar-span">{{ (index (last 1 $posts) 0).Date.Format "2006" }}–{{ (index (first 1 $posts) 0).Date.Format "2006" }}</span>
-    </h2>
+<aside class="site-sidebar">
+  <button class="sidebar-toggle" type="button" data-sidebar-toggle
+          aria-controls="archive-body" aria-expanded="true">
+    <span class="chevron" aria-hidden="true">‹</span>
+    <span class="sidebar-toggle-label">Archive</span>
+  </button>
 
-    {{- range $byYear }}
-    {{- $key := .Key }}
-    <details class="year"{{ if or (eq $key $newest) (eq $key $here) }} open{{ end }}>
-      <summary>
-        <span class="year-chevron" aria-hidden="true">›</span>
-        <span class="year-label">{{ $key }}</span>
-        <span class="year-count">{{ len .Pages }}</span>
-      </summary>
-      <ul class="year-posts">
-        {{- range .Pages }}
-        {{- $title := .Title | default (.Summary | plainify | truncate 60) }}
-        <li>
-          <a href="{{ .RelPermalink }}" title="{{ $title }}"
-             {{- if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ $title }}</a>
-        </li>
-        {{- end }}
-      </ul>
-    </details>
-    {{- end }}
+  <div class="sidebar-body" id="archive-body">
+    <nav aria-label="Archive">
+      <h2 class="sidebar-heading">
+        {{ len $posts }} posts
+        <span class="sidebar-span">{{ (index (last 1 $posts) 0).Date.Format "2006" }}–{{ (index (first 1 $posts) 0).Date.Format "2006" }}</span>
+      </h2>
 
-    <p class="sidebar-foot">
-      <a href="{{ (site.GetPage "/archive").RelPermalink }}">Full archive →</a>
-    </p>
-  </nav>
+      {{- range $byYear }}
+      {{- $key := .Key }}
+      <details class="year"{{ if or (eq $key $newest) (eq $key $here) }} open{{ end }}>
+        <summary>
+          <span class="year-chevron" aria-hidden="true">›</span>
+          <span class="year-label">{{ $key }}</span>
+          <span class="year-count">{{ len .Pages }}</span>
+        </summary>
+        <ul class="year-posts">
+          {{- range .Pages }}
+          {{- $title := .Title | default (.Summary | plainify | truncate 60) }}
+          <li>
+            <a href="{{ .RelPermalink }}" title="{{ $title }}"
+               {{- if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ $title }}</a>
+          </li>
+          {{- end }}
+        </ul>
+      </details>
+      {{- end }}
+
+      <p class="sidebar-foot">
+        <a href="{{ (site.GetPage "/archive").RelPermalink }}">Full archive →</a>
+      </p>
+    </nav>
+  </div>
 </aside>

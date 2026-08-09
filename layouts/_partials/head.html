@@ -21,11 +21,10 @@
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{/* Apply saved theme and sidebar state before first paint, so neither
-     flashes. Only an explicit choice is set here — the responsive default
-     is CSS's job, because a matchMedia check at parse time can fire while
-     the window is still sizing and strand the sidebar closed on desktop. */}}
-<script>(function(){var r=document.documentElement;try{
-var t=localStorage.getItem('theme');if(t){r.setAttribute('data-theme',t);}
-var s=localStorage.getItem('sidebar');if(s){r.setAttribute('data-sidebar',s);}
+{{/* Apply the saved sidebar state before first paint so it doesn't flash.
+     Only an explicit choice is set here — the responsive default is CSS's
+     job, because a matchMedia check at parse time can fire while the window
+     is still sizing and strand the sidebar closed on desktop. */}}
+<script>(function(){try{
+var s=localStorage.getItem('sidebar');if(s){document.documentElement.setAttribute('data-sidebar',s);}
 }catch(e){}})();</script>

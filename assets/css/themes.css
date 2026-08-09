@@ -6,16 +6,9 @@
 
    A one-off `accent: "#rrggbb"` in frontmatter works without a preset;
    it lands as an inline --accent on the same element.
-
-   Tuned against the dark default; the light overrides follow.
    ------------------------------------------------------------------ */
 
 [data-post-theme="parchment"] { --accent: #c9a227; --accent-soft: #2a2310; --mark: #4a3a1c; }
 [data-post-theme="ink"]       { --accent: #6ba3e0; --accent-soft: #12212f; --mark: #1d3350; }
 [data-post-theme="ember"]     { --accent: #e0674f; --accent-soft: #2c1712; }
 [data-post-theme="moss"]      { --accent: #7fbf6a; --accent-soft: #16250f; }
-
-:root[data-theme="light"] [data-post-theme="parchment"] { --accent: #8a6a2f; --accent-soft: #efe4c8; --mark: #f7f0a8; }
-:root[data-theme="light"] [data-post-theme="ink"]       { --accent: #3d5a80; --accent-soft: #dfe6ef; }
-:root[data-theme="light"] [data-post-theme="ember"]     { --accent: #b23a2f; --accent-soft: #f6ded9; }
-:root[data-theme="light"] [data-post-theme="moss"]      { --accent: #4a6b43; --accent-soft: #dfe9da; }

@@ -10,33 +10,23 @@
 <script>
 (function () {
   var root = document.documentElement;
+  var btn  = document.querySelector('[data-sidebar-toggle]');
+  var body = document.getElementById('archive-body');
+  if (!btn || !body) return;
 
-  // ---- theme: dark is the default, the toggle opts into light ----
-  var themeBtn = document.querySelector('[data-theme-toggle]');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', function () {
-      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-      root.setAttribute('data-theme', next);
-      try { localStorage.setItem('theme', next); } catch (e) {}
-    });
-  }
+  // Read real visibility rather than the attribute: the responsive default
+  // comes from CSS, so the attribute is absent until the reader chooses.
+  var visible = function () { return !!body.offsetParent; };
+  var sync = function () { btn.setAttribute('aria-expanded', visible()); };
 
-  // ---- sidebar ----
-  var sideBtn = document.querySelector('[data-sidebar-toggle]');
-  var sidebar = document.querySelector('.site-sidebar');
-  if (sideBtn && sidebar) {
-    // Read actual visibility rather than the attribute: the default comes
-    // from CSS, so the attribute may legitimately be absent.
-    var visible = function () { return !!sidebar.offsetParent; };
-    var sync = function () { sideBtn.setAttribute('aria-expanded', visible()); };
+  sync();
+  window.addEventListener('resize', sync);
+
+  btn.addEventListener('click', function () {
+    var next = visible() ? 'closed' : 'open';
+    root.setAttribute('data-sidebar', next);
     sync();
-    window.addEventListener('resize', sync);
-    sideBtn.addEventListener('click', function () {
-      var next = visible() ? 'closed' : 'open';
-      root.setAttribute('data-sidebar', next);
-      sync();
-      try { localStorage.setItem('sidebar', next); } catch (e) {}
-    });
-  }
+    try { localStorage.setItem('sidebar', next); } catch (e) {}
+  });
 })();
 </script>
