@@ -1,7 +1,9 @@
 {{/* The original theme put the site identity and navigation in a dark
      column on the left. Below 62rem it collapses to a stacked header. */}}
 <header class="site-sidebar">
-  <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  {{/* site.Home.RelPermalink, not "/" | relURL: the latter drops the
+       baseURL path, so on a project page it links out of the site. */}}
+  <a class="site-title" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
   {{- with site.Params.description }}
   <p class="site-description">{{ . }}</p>
   {{- end }}

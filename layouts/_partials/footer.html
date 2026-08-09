@@ -1,9 +1,9 @@
 <footer class="site-footer">
   <div class="wrap">
     {{ site.Title }} — dal 2004 ·
-    <a href="{{ "/archivio/" | relURL }}">Archivio</a> ·
-    <a href="{{ "/privacy/" | relURL }}">Privacy</a> ·
-    {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    {{- with site.GetPage "/archivio" }} <a href="{{ .RelPermalink }}">Archivio</a> ·{{ end }}
+    {{- with site.GetPage "/privacy" }} <a href="{{ .RelPermalink }}">Privacy</a> ·{{ end }}
+    {{- with site.Home.OutputFormats.Get "rss" }} <a href="{{ .RelPermalink }}">RSS</a>{{ end }}
   </div>
 </footer>
 
