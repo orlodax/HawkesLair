@@ -1,5 +1,5 @@
-{{/* Full 22-year index, grouped by year. Assigned via `layout: archive`
-     on content/archivio.md. */}}
+{{/* Full index, grouped by year then month. Year headings carry ids so the
+     sidebar can link straight to them. Assigned via `layout: archive`. */}}
 {{ define "main" }}
 <div class="wrap">
   <header class="post-header">
@@ -8,11 +8,14 @@
   </header>
 
   {{- $posts := where site.RegularPages "Section" "posts" }}
-  <p class="entry-excerpt">{{ len $posts }} post, dal {{ (index (last 1 $posts) 0).Date.Format "2006" }} a oggi.</p>
+  <p class="entry-excerpt">{{ len $posts }} posts, {{ (index (last 1 $posts) 0).Date.Format "2006" }}–{{ (index (first 1 $posts) 0).Date.Format "2006" }}.</p>
 
   {{- range $posts.GroupByDate "2006" }}
-  <section class="year-group">
-    <h2>{{ .Key }}</h2>
+  <section class="year-group" id="{{ .Key }}">
+    <h2>{{ .Key }} <span class="year-group-count">{{ len .Pages }}</span></h2>
+
+    {{- range .Pages.GroupByDate "January" }}
+    <h3 class="month-heading">{{ .Key }}</h3>
     <ul class="archive-list">
       {{- range .Pages }}
       <li>
@@ -23,6 +26,7 @@
       </li>
       {{- end }}
     </ul>
+    {{- end }}
   </section>
   {{- end }}
 </div>

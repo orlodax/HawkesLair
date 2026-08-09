@@ -1,10 +1,10 @@
 {{/* Receives a *page.Pager (the return value of .Paginate), not a Page. */}}
 {{- with . -}}
 {{- if gt .TotalPages 1 }}
-<nav class="pager" aria-label="Paginazione">
-  {{- with .Prev }}<a href="{{ .URL }}">← più recenti</a>{{ else }}<span></span>{{ end }}
+<nav class="pager" aria-label="Pagination">
+  {{- with .Prev }}<a href="{{ .URL }}">← Newer</a>{{ else }}<span></span>{{ end }}
   <span>{{ .PageNumber }} / {{ .TotalPages }}</span>
-  {{- with .Next }}<a href="{{ .URL }}">più vecchi →</a>{{ else }}<span></span>{{ end }}
+  {{- with .Next }}<a href="{{ .URL }}">Older →</a>{{ else }}<span></span>{{ end }}
 </nav>
 {{- end }}
 {{- end -}}

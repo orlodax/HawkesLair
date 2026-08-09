@@ -4,8 +4,8 @@
   {{/* Comments carried over from WordPress. Static — they are history,
        not a live thread. */}}
   {{- with .Params.archived_comments }}
-  <h2>{{ len . }} commenti d'archivio</h2>
-  <p class="comments-note">Dalla vecchia versione del blog su WordPress.</p>
+  <h2>{{ len . }} archived comments</h2>
+  <p class="comments-note">From this blog’s previous WordPress incarnation. Closed.</p>
   <ul class="comment-archive">
     {{- range . }}
     <li class="comment">
@@ -22,7 +22,7 @@
 
   {{- with site.Params.giscus }}
   {{- if .enable }}
-  <h2>Commenti</h2>
+  <h2>Comments</h2>
   <script src="https://giscus.app/client.js"
           data-repo="{{ .repo }}"
           data-repo-id="{{ .repoId }}"

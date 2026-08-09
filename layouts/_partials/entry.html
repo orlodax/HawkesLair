@@ -48,7 +48,7 @@
       <span class="dot">·</span><span>{{ .ReadingTime }} min</span>
       {{- end }}
     </div>
-    <h2 class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title | default "Senza titolo" }}</a></h2>
+    <h2 class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title | default "Untitled" }}</a></h2>
     <p class="entry-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
   {{- end }}
 </article>

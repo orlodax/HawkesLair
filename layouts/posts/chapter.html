@@ -15,8 +15,8 @@
   {{ partial "series-nav.html" . }}
 
   {{ if and .Params.toc (gt (len .TableOfContents) 60) }}
-  <nav class="series-box" aria-label="Indice">
-    <h2>In questo capitolo</h2>
+  <nav class="series-box" aria-label="Contents">
+    <h2>In this chapter</h2>
     {{ .TableOfContents }}
   </nav>
   {{ end }}

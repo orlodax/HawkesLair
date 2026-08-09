@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="wrap">
-    {{ site.Title }} — dal 2004 ·
-    {{- with site.GetPage "/archivio" }} <a href="{{ .RelPermalink }}">Archivio</a> ·{{ end }}
+    {{ site.Title }} — since 2004 ·
+    {{- with site.GetPage "/archive" }} <a href="{{ .RelPermalink }}">Archive</a> ·{{ end }}
     {{- with site.GetPage "/privacy" }} <a href="{{ .RelPermalink }}">Privacy</a> ·{{ end }}
     {{- with site.Home.OutputFormats.Get "rss" }} <a href="{{ .RelPermalink }}">RSS</a>{{ end }}
   </div>
@@ -9,15 +9,31 @@
 
 <script>
 (function () {
-  var btn = document.querySelector('[data-theme-toggle]');
-  if (!btn) return;
-  btn.addEventListener('click', function () {
-    var root = document.documentElement;
-    // Dark is the default (the original theme was dark-only), so the
-    // toggle simply opts in and out of light.
-    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
+  var root = document.documentElement;
+
+  // ---- theme: dark is the default, the toggle opts into light ----
+  var themeBtn = document.querySelector('[data-theme-toggle]');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  }
+
+  // ---- sidebar ----
+  var sideBtn = document.querySelector('[data-sidebar-toggle]');
+  if (sideBtn) {
+    var sync = function () {
+      sideBtn.setAttribute('aria-expanded', root.getAttribute('data-sidebar') !== 'closed');
+    };
+    sync();
+    sideBtn.addEventListener('click', function () {
+      var next = root.getAttribute('data-sidebar') === 'closed' ? 'open' : 'closed';
+      root.setAttribute('data-sidebar', next);
+      sync();
+      try { localStorage.setItem('sidebar', next); } catch (e) {}
+    });
+  }
 })();
 </script>

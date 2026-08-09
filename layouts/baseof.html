@@ -1,13 +1,15 @@
 <!doctype html>
-{{/* `lang` as a front matter key was removed in Hugo 0.144, so per-post
-     language rides on `postLang` instead. */}}
+{{/* No site-wide language is asserted: the archive is Italian, recent posts
+     are English. Each page declares its own via `postLang`; site.Language.Locale
+     is only the fallback for list pages. */}}
 <html lang="{{ or .Params.postLang site.Language.Locale }}">
 <head>
   {{ partial "head.html" . }}
 </head>
 <body>
-  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <a class="skip-link" href="#main">Skip to content</a>
   <div class="site">
+    {{ partial "topbar.html" . }}
     {{ partial "sidebar.html" . }}
     <div class="site-main">
       <main id="main">

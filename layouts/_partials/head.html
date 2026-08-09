@@ -21,5 +21,10 @@
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 
-{{/* Apply the saved theme before first paint so the page never flashes. */}}
-<script>(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+{{/* Apply saved theme and sidebar state before first paint, so neither
+     flashes. The sidebar defaults to closed on narrow screens. */}}
+<script>(function(){var r=document.documentElement;try{
+var t=localStorage.getItem('theme');if(t){r.setAttribute('data-theme',t);}
+var s=localStorage.getItem('sidebar');
+r.setAttribute('data-sidebar', s ? s : (window.matchMedia('(min-width: 62rem)').matches ? 'open' : 'closed'));
+}catch(e){r.setAttribute('data-sidebar','open');}})();</script>

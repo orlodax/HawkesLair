@@ -8,7 +8,7 @@
   {{- else }}{{ $prev = . }}{{ end -}}
 {{- end -}}
 {{- if or $prev $next }}
-<nav class="post-nav" aria-label="Capitolo precedente e successivo">
+<nav class="post-nav" aria-label="Previous and next chapter">
   {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
   {{- with $next }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
 </nav>

@@ -5,8 +5,12 @@
 # from the root, and the whole site renders unstyled with 404 links.
 baseURL = "https://orlodax.github.io/HawkesLair/"
 title = "Hawke's Lair"
-locale = "it-IT"
-defaultContentLanguage = "it"
+# The blog is genuinely bilingual: the 2004-2015 archive is Italian, recent
+# posts are English. Neither is "the" site language. This is only a fallback
+# for list pages and feed metadata — individual posts declare their own via
+# the `postLang` front matter key, which drives <html lang>.
+locale = "en"
+defaultContentLanguage = "en"
 timeZone = "Europe/Rome"
 enableEmoji = true
 
@@ -53,15 +57,9 @@ disableKinds = []
     reactionsEnabled = "1"
     lang = "it"
 
-[[menus.main]]
-  name = "Archivio"
-  url = "/archivio/"
-  weight = 10
-
-[[menus.main]]
-  name = "Categorie"
-  url = "/categories/"
-  weight = 20
+# No nav menu: the sidebar is the archive, and the footer carries the rest.
+# Categories were dropped from navigation — they describe the legacy
+# WordPress taxonomy and are not a useful way into this archive.
 
 [outputs]
   home = ["HTML", "RSS"]
