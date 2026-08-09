@@ -2,7 +2,7 @@
 title: Fregatura
 date: '2010-03-18T16:24:00+01:00'
 slug: fregatura
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 4340.jpg

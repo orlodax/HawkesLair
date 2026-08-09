@@ -2,7 +2,7 @@
 title: Spettacolo!!
 date: '2012-11-27T15:38:11+01:00'
 slug: spettacolo
-layout: note
+layout: single
 categories:
 - Scriptures
 thumbnail: esau-jacob-e1354027073697.jpg

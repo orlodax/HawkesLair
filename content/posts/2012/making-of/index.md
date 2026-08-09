@@ -2,7 +2,7 @@
 title: Making of
 date: '2012-09-25T19:07:23+01:00'
 slug: making-of
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

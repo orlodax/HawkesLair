@@ -2,7 +2,7 @@
 title: Just lose and lose
 date: '2010-11-07T16:32:06+01:00'
 slug: just-lose-and-lose
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: en

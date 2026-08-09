@@ -2,7 +2,7 @@
 title: Kriss' Journey
 date: '2020-04-13T15:28:14+01:00'
 slug: kriss-journey
-layout: note
+layout: single
 thumbnail: copertinakj.jpg
 postLang: en
 aliases:

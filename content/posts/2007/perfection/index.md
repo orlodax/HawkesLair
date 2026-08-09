@@ -2,7 +2,7 @@
 title: Perfection
 date: '2007-09-21T11:54:00+01:00'
 slug: perfection
-layout: note
+layout: single
 categories:
 - Various
 tags:

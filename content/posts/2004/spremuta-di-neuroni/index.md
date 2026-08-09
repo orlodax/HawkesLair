@@ -2,7 +2,7 @@
 title: Spremuta di neuroni!!!
 date: '2004-10-21T13:44:00+01:00'
 slug: spremuta-di-neuroni
-layout: note
+layout: single
 categories:
 - Various
 tags:

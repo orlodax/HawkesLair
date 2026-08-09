@@ -2,7 +2,7 @@
 title: Ma poi ho visto lei...
 date: '2007-05-17T12:23:00+01:00'
 slug: ma-poi-ho-visto-lei
-layout: note
+layout: single
 categories:
 - Various
 tags:

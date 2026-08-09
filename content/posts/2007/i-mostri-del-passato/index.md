@@ -2,7 +2,7 @@
 title: I mostri del passato….
 date: '2007-05-15T12:02:00+01:00'
 slug: i-mostri-del-passato
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: ss461.jpg

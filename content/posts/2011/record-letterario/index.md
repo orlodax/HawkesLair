@@ -2,7 +2,7 @@
 title: Record letterario
 date: '2011-01-21T14:48:09+01:00'
 slug: record-letterario
-layout: note
+layout: single
 categories:
 - Various
 tags:

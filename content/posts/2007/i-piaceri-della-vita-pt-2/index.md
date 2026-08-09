@@ -2,7 +2,7 @@
 title: I piaceri della vita pt.2
 date: '2007-01-15T20:17:00+01:00'
 slug: i-piaceri-della-vita-pt-2
-layout: note
+layout: single
 categories:
 - Piaceri della vita
 thumbnail: 013-fish-and-chips.jpg

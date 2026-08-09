@@ -2,7 +2,7 @@
 title: Ai figli degli uomini
 date: '2011-01-16T16:08:50+01:00'
 slug: ai-figli-degli-uomini
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

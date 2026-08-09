@@ -2,7 +2,7 @@
 title: Nota del 26/01/2009
 date: '2009-01-26T08:34:00+01:00'
 slug: nota-del-26-01-2009
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Viaggi

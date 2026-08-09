@@ -2,7 +2,7 @@
 title: Love me!
 date: '2008-08-04T17:32:00+01:00'
 slug: love-me
-layout: note
+layout: single
 categories:
 - Various
 tags:

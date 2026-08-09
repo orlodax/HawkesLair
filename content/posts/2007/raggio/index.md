@@ -2,7 +2,7 @@
 title: Raggio
 date: '2007-06-28T13:39:00+01:00'
 slug: raggio
-layout: note
+layout: single
 categories:
 - Various
 tags:

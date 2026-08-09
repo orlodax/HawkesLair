@@ -2,7 +2,7 @@
 title: Shock
 date: '2011-08-12T19:39:25+01:00'
 slug: shock
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: e1af00fd31e79c8d36a5521b736337ea-d469wb.jpg

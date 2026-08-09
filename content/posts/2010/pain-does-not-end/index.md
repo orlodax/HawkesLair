@@ -2,7 +2,7 @@
 title: Pain does not end
 date: '2010-04-06T10:00:00+01:00'
 slug: pain-does-not-end
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: cry.jpg

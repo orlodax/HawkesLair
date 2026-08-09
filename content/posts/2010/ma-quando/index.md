@@ -2,7 +2,7 @@
 title: Ma quando...?
 date: '2010-03-31T19:51:00+01:00'
 slug: ma-quando
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: 2475905381-da900f0c0c-b.jpg

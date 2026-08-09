@@ -2,7 +2,7 @@
 title: queste vacanze a Barcellona e Andorra mi hanno fatto perdere la testa
 date: '2008-12-29T22:25:00+01:00'
 slug: queste-vacanze-a-barcellona-e-andorra-mi-hanno-fatto
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Viaggi

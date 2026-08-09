@@ -2,7 +2,7 @@
 title: ATTENZIONE - IMPORTANTE
 date: '2005-10-01T21:34:00+01:00'
 slug: attenzione-importante
-layout: note
+layout: single
 categories:
 - Various
 tags:

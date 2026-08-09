@@ -2,7 +2,7 @@
 title: Kiss
 date: '2010-03-24T16:45:00+01:00'
 slug: kiss
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: en

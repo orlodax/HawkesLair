@@ -2,7 +2,7 @@
 title: Non dico di avere talento...
 date: '2004-10-26T13:23:00+01:00'
 slug: non-dico-di-avere-talento
-layout: note
+layout: single
 categories:
 - Various
 tags:

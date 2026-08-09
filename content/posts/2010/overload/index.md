@@ -2,7 +2,7 @@
 title: Overload
 date: '2010-09-21T17:48:10+01:00'
 slug: overload
-layout: note
+layout: single
 categories:
 - Various
 tags:

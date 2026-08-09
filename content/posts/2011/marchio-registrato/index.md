@@ -2,7 +2,7 @@
 title: Marchio Registrato
 date: '2011-05-30T20:00:05+01:00'
 slug: marchio-registrato
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

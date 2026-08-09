@@ -2,7 +2,7 @@
 title: Gioie dell'edilizia economica popolare 3
 date: '2007-10-22T13:09:00+01:00'
 slug: gioie-delledilizia-economica-popolare-3
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2301.jpg

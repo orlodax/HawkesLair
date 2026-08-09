@@ -2,7 +2,7 @@
 title: 299° post!
 date: '2010-12-13T11:03:51+01:00'
 slug: 299-post
-layout: note
+layout: single
 categories:
 - Various
 tags:

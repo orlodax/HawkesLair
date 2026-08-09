@@ -2,7 +2,7 @@
 title: Modellando
 date: '2011-12-10T17:48:33+01:00'
 slug: modellando
-layout: note
+layout: single
 categories:
 - Various
 tags:

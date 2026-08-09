@@ -2,7 +2,7 @@
 title: Ursula 1
 date: '2007-11-09T17:20:00+01:00'
 slug: ursula-1
-layout: note
+layout: single
 categories:
 - Ideas
 tags:

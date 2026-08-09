@@ -2,7 +2,7 @@
 title: Alle strette...
 date: '2008-01-18T21:50:00+01:00'
 slug: alle-strette
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2516.jpg

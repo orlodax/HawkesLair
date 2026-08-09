@@ -2,7 +2,7 @@
 title: For my non-italian friends!
 date: '2010-08-02T20:29:13+01:00'
 slug: for-my-non-italian-friends
-layout: note
+layout: single
 categories:
 - Various
 postLang: en

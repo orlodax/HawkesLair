@@ -2,7 +2,7 @@
 title: Nice drawing
 date: '2010-08-06T14:45:53+01:00'
 slug: nice-drawing
-layout: note
+layout: single
 categories:
 - Various
 tags:

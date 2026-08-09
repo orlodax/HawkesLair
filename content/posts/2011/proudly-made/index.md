@@ -2,7 +2,7 @@
 title: Proudly made
 date: '2011-03-31T17:18:32+01:00'
 slug: proudly-made
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

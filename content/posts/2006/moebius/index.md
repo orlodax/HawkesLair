@@ -2,7 +2,7 @@
 title: Moebius
 date: '2006-05-29T15:56:00+01:00'
 slug: moebius
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

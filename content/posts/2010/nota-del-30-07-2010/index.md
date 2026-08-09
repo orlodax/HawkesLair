@@ -2,7 +2,7 @@
 title: Nota del 30/07/2010
 date: '2010-07-30T13:18:36+01:00'
 slug: nota-del-30-07-2010
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

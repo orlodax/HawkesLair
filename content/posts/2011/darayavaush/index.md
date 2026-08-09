@@ -2,7 +2,7 @@
 title: Darayavaush
 date: '2011-03-02T19:05:40+01:00'
 slug: darayavaush
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

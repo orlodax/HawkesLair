@@ -2,7 +2,7 @@
 title: Salve!
 date: '2011-08-09T14:58:05+01:00'
 slug: salve
-layout: note
+layout: single
 categories:
 - Various
 tags:

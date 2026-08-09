@@ -2,7 +2,7 @@
 title: Categoria "Storie"
 date: '2010-08-29T12:19:01+01:00'
 slug: esperimento-narrativo
-layout: note
+layout: single
 categories:
 - Stories
 postLang: it

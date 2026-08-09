@@ -2,7 +2,7 @@
 title: The holiness of a bleeding heart
 date: '2011-07-29T18:25:01+01:00'
 slug: the-holiness-of-a-bleeding-heart
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: en

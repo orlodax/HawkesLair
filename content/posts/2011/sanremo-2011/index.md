@@ -2,7 +2,7 @@
 title: Sanremo 2011
 date: '2011-02-20T19:15:09+01:00'
 slug: sanremo-2011
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

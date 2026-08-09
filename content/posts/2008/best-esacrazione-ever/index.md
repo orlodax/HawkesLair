@@ -2,7 +2,7 @@
 title: Best Esacrazione Ever
 date: '2008-01-15T19:18:00+01:00'
 slug: best-esacrazione-ever
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

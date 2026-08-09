@@ -2,7 +2,7 @@
 title: La differenza
 date: '2006-09-28T20:40:00+01:00'
 slug: la-differenza
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

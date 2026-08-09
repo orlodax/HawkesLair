@@ -2,7 +2,7 @@
 title: Servizi grafici per gli sposi!
 date: '2010-09-01T21:22:53+01:00'
 slug: servizi-grafici-per-gli-sposi
-layout: note
+layout: single
 categories:
 - Various
 tags:

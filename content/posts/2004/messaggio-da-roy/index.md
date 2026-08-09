@@ -2,7 +2,7 @@
 title: Messaggio da Roy
 date: '2004-07-19T18:27:00+01:00'
 slug: messaggio-da-roy
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Non sono d'accordo
 date: '2005-10-31T09:27:00+01:00'
 slug: non-sono-daccordo
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

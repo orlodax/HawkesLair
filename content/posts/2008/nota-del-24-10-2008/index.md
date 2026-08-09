@@ -2,7 +2,7 @@
 title: Nota del 24/10/2008
 date: '2008-10-24T11:27:00+01:00'
 slug: nota-del-24-10-2008
-layout: note
+layout: single
 categories:
 - Various
 tags:

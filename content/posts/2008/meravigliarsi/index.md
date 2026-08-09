@@ -2,7 +2,7 @@
 title: Meravigliarsi
 date: '2008-02-25T16:45:00+01:00'
 slug: meravigliarsi
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: img-0251.jpg

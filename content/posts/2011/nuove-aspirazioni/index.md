@@ -2,7 +2,7 @@
 title: Nuove aspirazioni
 date: '2011-05-30T20:13:20+01:00'
 slug: nuove-aspirazioni
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Telefonata di Roy (monologo)
 date: '2005-02-10T19:02:00+01:00'
 slug: telefonata-di-roy-monologo
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

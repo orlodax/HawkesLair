@@ -2,7 +2,7 @@
 title: I piaceri della vita – pt.5
 date: '2010-12-05T15:58:23+01:00'
 slug: i-piaceri-della-vita-pt-5-2
-layout: note
+layout: single
 categories:
 - Piaceri della vita
 tags:

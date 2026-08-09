@@ -2,7 +2,7 @@
 title: 'Francesco dice:'
 date: '2006-01-12T17:43:00+01:00'
 slug: francesco-dice
-layout: note
+layout: single
 categories:
 - Various
 tags:

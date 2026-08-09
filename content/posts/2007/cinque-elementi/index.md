@@ -2,7 +2,7 @@
 title: Cinque Elementi
 date: '2007-05-01T21:01:00+01:00'
 slug: cinque-elementi
-layout: note
+layout: single
 categories:
 - Ideas
 thumbnail: 5-elementi-copia.jpg

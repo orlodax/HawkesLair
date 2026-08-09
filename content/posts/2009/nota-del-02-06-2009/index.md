@@ -2,7 +2,7 @@
 title: Nota del 02/06/2009
 date: '2009-06-02T07:16:00+01:00'
 slug: nota-del-02-06-2009
-layout: note
+layout: single
 categories:
 - Various
 tags:

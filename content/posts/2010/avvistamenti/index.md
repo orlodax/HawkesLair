@@ -2,7 +2,7 @@
 title: Avvistamenti
 date: '2010-11-11T16:03:59+01:00'
 slug: avvistamenti
-layout: note
+layout: single
 categories:
 - Viaggi
 postLang: it

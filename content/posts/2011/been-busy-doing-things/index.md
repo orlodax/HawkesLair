@@ -2,7 +2,7 @@
 title: Been busy doing... things.
 date: '2011-07-18T19:34:10+01:00'
 slug: been-busy-doing-things
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Paramore:_When it rains
 date: '2010-12-27T19:44:17+01:00'
 slug: paramore_when-it-rains
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

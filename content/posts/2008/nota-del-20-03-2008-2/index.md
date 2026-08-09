@@ -2,7 +2,7 @@
 title: Nota del 20/03/2008
 date: '2008-03-20T13:50:00+01:00'
 slug: nota-del-20-03-2008-2
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2636.jpg

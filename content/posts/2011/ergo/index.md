@@ -2,7 +2,7 @@
 title: E(r)go...
 date: '2011-05-31T15:19:34+01:00'
 slug: ergo
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

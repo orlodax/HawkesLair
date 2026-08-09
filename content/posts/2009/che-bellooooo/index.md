@@ -2,7 +2,7 @@
 title: Che bellooooo
 date: '2009-06-03T17:15:00+01:00'
 slug: che-bellooooo
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

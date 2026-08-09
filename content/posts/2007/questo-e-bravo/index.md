@@ -2,7 +2,7 @@
 title: Questo è bravo
 date: '2007-09-19T11:54:00+01:00'
 slug: questo-e-bravo
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Per "The Admin"
 date: '2011-05-27T11:23:53+01:00'
 slug: per-the-admin
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Various

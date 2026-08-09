@@ -2,7 +2,7 @@
 title: Today's choice
 date: '2011-03-12T15:47:14+01:00'
 slug: todays-choice
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

@@ -2,7 +2,7 @@
 title: Nota del 23/12/2007
 date: '2007-12-23T14:26:00+01:00'
 slug: nota-del-23-12-2007
-layout: note
+layout: single
 categories:
 - Various
 tags:

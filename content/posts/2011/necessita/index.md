@@ -2,7 +2,7 @@
 title: Necessità...
 date: '2011-08-11T17:06:48+01:00'
 slug: necessita
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: img-0442.jpg

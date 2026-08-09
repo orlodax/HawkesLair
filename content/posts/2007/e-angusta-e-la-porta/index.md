@@ -2,7 +2,7 @@
 title: '...e angusta è la porta...'
 date: '2007-07-12T11:27:00+01:00'
 slug: e-angusta-e-la-porta
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2086.jpg

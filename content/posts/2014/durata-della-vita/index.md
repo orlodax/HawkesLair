@@ -2,7 +2,7 @@
 title: Durata della vita
 date: '2014-01-22T14:20:13+01:00'
 slug: durata-della-vita
-layout: note
+layout: single
 categories:
 - Scriptures
 cover: cover-immagine31.gif

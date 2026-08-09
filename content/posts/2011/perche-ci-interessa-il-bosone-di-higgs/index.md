@@ -2,7 +2,7 @@
 title: Perché ci interessa il bosone di Higgs
 date: '2011-12-17T16:56:49+01:00'
 slug: perche-ci-interessa-il-bosone-di-higgs
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

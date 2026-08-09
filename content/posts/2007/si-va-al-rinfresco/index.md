@@ -2,7 +2,7 @@
 title: Si va al rinfresco
 date: '2007-08-31T13:40:00+01:00'
 slug: si-va-al-rinfresco
-layout: note
+layout: single
 categories:
 - Various
 tags:

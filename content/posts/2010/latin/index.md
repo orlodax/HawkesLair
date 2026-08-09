@@ -2,7 +2,7 @@
 title: Latin
 date: '2010-09-17T14:21:32+01:00'
 slug: latin
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

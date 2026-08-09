@@ -2,7 +2,7 @@
 title: '!BLAST!'
 date: '2008-08-05T09:33:00+01:00'
 slug: blast
-layout: note
+layout: single
 categories:
 - Anime
 - Emotions, Music

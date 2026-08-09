@@ -2,7 +2,7 @@
 title: Delle verità...
 date: '2011-08-19T12:20:29+01:00'
 slug: delle-verita
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

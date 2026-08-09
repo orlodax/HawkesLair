@@ -2,7 +2,7 @@
 title: Ergo Proxy
 date: '2009-01-20T12:22:00+01:00'
 slug: ergo-proxy
-layout: note
+layout: single
 categories:
 - Anime
 thumbnail: ergo2lv1.jpg

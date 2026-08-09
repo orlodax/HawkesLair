@@ -2,7 +2,7 @@
 title: Where to go?
 date: '2010-09-08T17:14:31+01:00'
 slug: where-to-go
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

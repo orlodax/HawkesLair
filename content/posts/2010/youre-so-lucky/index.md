@@ -2,7 +2,7 @@
 title: You're so lucky...
 date: '2010-12-13T10:48:01+01:00'
 slug: youre-so-lucky
-layout: note
+layout: single
 categories:
 - Various
 tags:

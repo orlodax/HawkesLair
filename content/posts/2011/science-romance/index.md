@@ -2,7 +2,7 @@
 title: Science Romance
 date: '2011-12-20T10:32:45+01:00'
 slug: science-romance
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: angular-momentum.jpg

@@ -2,7 +2,7 @@
 title: 03:56:00:21:45:00000020320000
 date: '2012-06-28T09:15:37+01:00'
 slug: 03-56-00-21-45-00000020320000
-layout: note
+layout: single
 categories:
 - Various
 tags:

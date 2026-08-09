@@ -2,7 +2,7 @@
 title: Hit the Ground
 date: '2010-09-09T12:51:17+01:00'
 slug: hit-the-ground
-layout: note
+layout: single
 categories:
 - Various
 tags:

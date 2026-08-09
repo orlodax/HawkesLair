@@ -2,7 +2,7 @@
 title: Vroom!
 date: '2011-04-21T14:20:07+01:00'
 slug: vroom
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

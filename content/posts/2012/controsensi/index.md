@@ -2,7 +2,7 @@
 title: Controsensi
 date: '2012-01-03T18:43:17+01:00'
 slug: controsensi
-layout: note
+layout: single
 categories:
 - Various
 tags:

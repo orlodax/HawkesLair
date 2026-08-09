@@ -2,7 +2,7 @@
 title: La pazienza
 date: '2008-01-01T10:29:00+01:00'
 slug: la-pazienza
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2463.jpg

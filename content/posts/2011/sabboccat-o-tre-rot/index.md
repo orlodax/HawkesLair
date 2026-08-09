@@ -2,7 +2,7 @@
 title: S'abboccat' o' tre rot'
 date: '2011-12-09T12:54:31+01:00'
 slug: sabboccat-o-tre-rot
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: agndigacmaaaab-jpg-large.jpeg

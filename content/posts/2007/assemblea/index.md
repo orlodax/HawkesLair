@@ -2,7 +2,7 @@
 title: Assemblea!
 date: '2007-08-14T09:50:00+01:00'
 slug: assemblea
-layout: note
+layout: single
 categories:
 - Various
 tags:

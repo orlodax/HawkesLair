@@ -291,17 +291,6 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.
    2010 upload is shown sharp rather than stretched. */
 .entry-media img { width: 100%; height: auto; display: block; margin-inline: auto; }
 
-/* A note is short enough that the post *is* the list item. */
-.entry--note {
-  border-left: 3px solid var(--rule);
-  padding-left: 1.1rem;
-}
-.entry--note:hover { border-left-color: var(--accent); }
-.entry--note .entry-body > :first-child { margin-top: 0; }
-.entry--note .entry-body > :last-child  { margin-bottom: 0; }
-.entry-permalink { color: var(--muted); }
-.entry-permalink:hover { color: var(--accent); }
-
 .entry-excerpt { color: var(--fg); margin: 0; }
 
 /* ---------- prose ---------- */
@@ -389,7 +378,6 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.
 .post-cover img { width: 100%; height: auto; display: block; margin-inline: auto; }
 
 .post--chapter { line-height: 1.65; }
-.post--note .post-title { font-size: var(--step-1); }
 
 .post-footer {
   margin-top: var(--gap-lg);

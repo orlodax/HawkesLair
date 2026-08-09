@@ -2,7 +2,7 @@
 title: '...and it makes me wonder...'
 date: '2011-07-20T18:33:14+01:00'
 slug: and-it-makes-me-wonder
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: en

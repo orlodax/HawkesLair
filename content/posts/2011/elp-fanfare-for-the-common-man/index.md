@@ -2,7 +2,7 @@
 title: ELP - Fanfare for the common man
 date: '2011-11-12T11:39:50+01:00'
 slug: elp-fanfare-for-the-common-man
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

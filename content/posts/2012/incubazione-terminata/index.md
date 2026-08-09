@@ -2,7 +2,7 @@
 title: Incubazione terminata
 date: '2012-01-12T12:33:30+01:00'
 slug: incubazione-terminata
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

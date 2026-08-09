@@ -2,7 +2,7 @@
 title: Dimenticavo
 date: '2008-10-24T11:28:00+01:00'
 slug: dimenticavo
-layout: note
+layout: single
 categories:
 - Various
 tags:

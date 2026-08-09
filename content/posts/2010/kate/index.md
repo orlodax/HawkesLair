@@ -2,7 +2,7 @@
 title: Kate!
 date: '2010-01-17T12:00:00+01:00'
 slug: kate
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Various

@@ -2,7 +2,7 @@
 title: Verso un altro... ...soffitto?
 date: '2010-10-13T12:48:27+01:00'
 slug: verso-un-altro-soffitto
-layout: note
+layout: single
 categories:
 - Viaggi
 postLang: it

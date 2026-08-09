@@ -2,7 +2,7 @@
 title: Prato in fiore
 date: '2007-06-28T13:40:00+01:00'
 slug: prato-in-fiore
-layout: note
+layout: single
 categories:
 - Various
 tags:

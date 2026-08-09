@@ -2,7 +2,7 @@
 title: Nota del 28/11/2007
 date: '2007-11-28T10:33:00+01:00'
 slug: nota-del-28-11-2007
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2384.jpg

@@ -2,7 +2,7 @@
 title: Esempi di Cyberpunk dal vivo
 date: '2011-08-07T16:27:08+01:00'
 slug: esempi-di-cyberpunk-dal-vivo
-layout: note
+layout: single
 categories:
 - Various
 tags:

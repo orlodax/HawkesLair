@@ -2,7 +2,7 @@
 title: Obsessing
 date: '2010-08-06T14:42:49+01:00'
 slug: obsessing
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

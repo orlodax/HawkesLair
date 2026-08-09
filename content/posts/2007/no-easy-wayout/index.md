@@ -2,7 +2,7 @@
 title: No easy wayout
 date: '2007-07-15T12:39:00+01:00'
 slug: no-easy-wayout
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: stairwaytonowhere.jpg

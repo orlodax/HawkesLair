@@ -2,7 +2,7 @@
 title: Hardware paesaggistico
 date: '2012-01-02T18:30:58+01:00'
 slug: hardware-paesaggistico
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: aiaomyycaaageab-jpg-large.jpeg

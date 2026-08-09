@@ -2,7 +2,7 @@
 title: Toscana 2010
 date: '2010-09-02T19:08:47+01:00'
 slug: toscana-2010
-layout: note
+layout: single
 categories:
 - Viaggi
 postLang: it

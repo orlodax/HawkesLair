@@ -2,7 +2,7 @@
 title: Cosa rende Yoda Yoda
 date: '2013-09-24T12:29:00+01:00'
 slug: cosa-rende-yoda-yoda
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: inline-1.jpg

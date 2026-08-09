@@ -2,7 +2,7 @@
 title: Paradossi
 date: '2010-07-24T16:28:46+01:00'
 slug: paradossi
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Solo
 date: '2006-10-02T09:49:00+01:00'
 slug: solo
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

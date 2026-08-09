@@ -2,7 +2,7 @@
 title: Power Supreme
 date: '2012-09-26T10:49:10+01:00'
 slug: power-supreme
-layout: note
+layout: single
 categories:
 - Various
 tags:

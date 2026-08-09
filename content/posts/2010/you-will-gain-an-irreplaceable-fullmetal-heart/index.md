@@ -2,7 +2,7 @@
 title: …you will gain an irreplaceable Fullmetal Heart…
 date: '2010-07-12T11:45:40+01:00'
 slug: you-will-gain-an-irreplaceable-fullmetal-heart
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Ideas

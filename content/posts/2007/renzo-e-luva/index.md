@@ -2,7 +2,7 @@
 title: Renzo e l’uva
 date: '2007-06-28T13:38:00+01:00'
 slug: renzo-e-luva
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: img-0160.jpg

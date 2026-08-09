@@ -2,7 +2,7 @@
 title: Flying Colors
 date: '2012-07-15T15:37:20+01:00'
 slug: flying-colors
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

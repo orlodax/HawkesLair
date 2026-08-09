@@ -2,7 +2,7 @@
 title: Cool trick
 date: '2010-08-24T10:02:11+01:00'
 slug: cool-trick
-layout: note
+layout: single
 categories:
 - Various
 tags:

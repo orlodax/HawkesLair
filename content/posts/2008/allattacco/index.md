@@ -2,7 +2,7 @@
 title: All'attacco
 date: '2008-01-25T13:20:00+01:00'
 slug: allattacco
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2534.jpg

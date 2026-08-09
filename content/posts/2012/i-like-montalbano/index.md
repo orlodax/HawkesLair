@@ -2,7 +2,7 @@
 title: I like Montalbano
 date: '2012-03-17T17:59:47+01:00'
 slug: i-like-montalbano
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

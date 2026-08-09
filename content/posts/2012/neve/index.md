@@ -2,7 +2,7 @@
 title: Neve!
 date: '2012-02-04T14:36:39+01:00'
 slug: neve
-layout: note
+layout: single
 categories:
 - Various
 tags:

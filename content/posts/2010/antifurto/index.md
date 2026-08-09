@@ -2,7 +2,7 @@
 title: Antifurto
 date: '2010-10-04T16:16:56+01:00'
 slug: antifurto
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

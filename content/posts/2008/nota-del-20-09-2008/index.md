@@ -2,7 +2,7 @@
 title: Nota del 20/09/2008
 date: '2008-09-20T08:02:00+01:00'
 slug: nota-del-20-09-2008
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Dubbio epico
 date: '2004-07-22T12:14:00+01:00'
 slug: dubbio-epico
-layout: note
+layout: single
 categories:
 - Various
 tags:

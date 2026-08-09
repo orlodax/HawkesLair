@@ -2,7 +2,7 @@
 title: Spatolato/Marmorino
 date: '2012-01-29T14:44:49+01:00'
 slug: spatolatomarmorino
-layout: note
+layout: single
 categories:
 - Various
 tags:

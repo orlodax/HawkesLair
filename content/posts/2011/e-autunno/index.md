@@ -2,7 +2,7 @@
 title: E' Autunno
 date: '2011-10-28T07:54:48+01:00'
 slug: e-autunno
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Il Vento e la Sabbia
 date: '2009-01-20T09:18:00+01:00'
 slug: il-vento-e-la-sabbia
-layout: note
+layout: single
 categories:
 - Ideas
 thumbnail: sandtravelerprn2.jpg

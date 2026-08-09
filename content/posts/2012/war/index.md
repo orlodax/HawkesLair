@@ -2,7 +2,7 @@
 title: War
 date: '2012-03-16T07:47:52+01:00'
 slug: war
-layout: note
+layout: single
 postLang: en
 aliases:
 - /2012/03/16/war/

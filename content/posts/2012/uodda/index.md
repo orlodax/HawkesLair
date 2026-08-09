@@ -2,7 +2,7 @@
 title: Uodda?
 date: '2012-10-24T19:15:29+01:00'
 slug: uodda
-layout: note
+layout: single
 categories:
 - Various
 thumbnail: awesome-rage.jpg

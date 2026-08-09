@@ -2,7 +2,7 @@
 title: Works in progress 2
 date: '2007-09-21T11:57:00+01:00'
 slug: works-in-progress-2
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Becca...
 date: '2011-08-07T18:08:53+01:00'
 slug: becca
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

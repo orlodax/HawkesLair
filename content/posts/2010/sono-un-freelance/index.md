@@ -2,7 +2,7 @@
 title: Sono un Freelance!
 date: '2010-04-12T15:05:00+01:00'
 slug: sono-un-freelance
-layout: note
+layout: single
 categories:
 - Various
 tags:

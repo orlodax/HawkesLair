@@ -2,7 +2,7 @@
 title: N cia posso fà
 date: '2010-07-24T16:16:52+01:00'
 slug: n-cia-posso-fa
-layout: note
+layout: single
 categories:
 - Various
 tags:

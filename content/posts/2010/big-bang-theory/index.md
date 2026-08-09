@@ -2,7 +2,7 @@
 title: Big Bang Theory!!
 date: '2010-09-22T17:54:22+01:00'
 slug: big-bang-theory
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

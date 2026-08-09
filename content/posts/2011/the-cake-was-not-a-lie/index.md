@@ -2,7 +2,7 @@
 title: The Cake was not a Lie
 date: '2011-10-20T12:16:31+01:00'
 slug: the-cake-was-not-a-lie
-layout: note
+layout: single
 categories:
 - Various
 tags:

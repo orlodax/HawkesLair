@@ -2,7 +2,7 @@
 title: 'I 3 porcellini erano due: ...Jimmy.'
 date: '2010-06-09T15:12:04+01:00'
 slug: i-3-porcellini-erano-due-jimmy
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

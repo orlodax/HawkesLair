@@ -2,7 +2,7 @@
 title: Vacca stesa
 date: '2004-06-03T20:27:00+01:00'
 slug: vacca-stesa
-layout: note
+layout: single
 categories:
 - Various
 tags:

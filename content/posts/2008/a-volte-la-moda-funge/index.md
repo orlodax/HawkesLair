@@ -2,7 +2,7 @@
 title: A volte la moda funge
 date: '2008-02-03T12:44:00+01:00'
 slug: a-volte-la-moda-funge
-layout: note
+layout: single
 categories:
 - Various
 tags:

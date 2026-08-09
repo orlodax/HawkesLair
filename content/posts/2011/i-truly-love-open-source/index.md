@@ -2,7 +2,7 @@
 title: I truly love Open Source
 date: '2011-03-13T13:28:47+01:00'
 slug: i-truly-love-open-source
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

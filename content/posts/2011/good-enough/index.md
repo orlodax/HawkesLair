@@ -2,7 +2,7 @@
 title: Good Enough
 date: '2011-08-12T19:41:30+01:00'
 slug: good-enough
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

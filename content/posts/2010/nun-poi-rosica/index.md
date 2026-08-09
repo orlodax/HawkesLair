@@ -2,7 +2,7 @@
 title: Nun poi rosicà!!
 date: '2010-04-13T17:26:00+01:00'
 slug: nun-poi-rosica
-layout: note
+layout: single
 categories:
 - Ideas
 thumbnail: dog-teeth-cleaning.jpg

@@ -2,7 +2,7 @@
 title: Forchette!
 date: '2012-10-04T12:05:28+01:00'
 slug: forchette
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Scynt
 date: '2010-11-17T21:16:27+01:00'
 slug: scynt
-layout: note
+layout: single
 categories:
 - Scynt
 - Stories

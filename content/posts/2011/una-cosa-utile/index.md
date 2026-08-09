@@ -2,7 +2,7 @@
 title: Una cosa utile
 date: '2011-01-13T16:41:28+01:00'
 slug: una-cosa-utile
-layout: note
+layout: single
 categories:
 - Ideas
 tags:

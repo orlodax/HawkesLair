@@ -2,7 +2,7 @@
 title: 'No'
 date: '2010-06-11T19:18:05+01:00'
 slug: no-3
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

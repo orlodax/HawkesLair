@@ -2,7 +2,7 @@
 title: Burnin' cry
 date: '2011-06-06T21:47:43+01:00'
 slug: burnin-cry
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

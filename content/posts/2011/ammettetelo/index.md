@@ -2,7 +2,7 @@
 title: Ammettetelo...
 date: '2011-07-28T18:02:28+01:00'
 slug: ammettetelo
-layout: note
+layout: single
 categories:
 - Various
 tags:

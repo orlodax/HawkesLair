@@ -2,7 +2,7 @@
 title: I-oh è preoccupato
 date: '2010-09-27T11:31:23+01:00'
 slug: i-oh-e-preoccupato
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Viaggi

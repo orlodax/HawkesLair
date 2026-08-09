@@ -2,7 +2,7 @@
 title: Curiosità del mese
 date: '2011-03-04T11:31:06+01:00'
 slug: curiosita-del-mese
-layout: note
+layout: single
 categories:
 - Various
 tags:

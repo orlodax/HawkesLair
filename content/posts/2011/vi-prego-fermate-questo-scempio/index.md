@@ -2,7 +2,7 @@
 title: Vi prego, fermate questo scempio!
 date: '2011-07-28T15:11:59+01:00'
 slug: vi-prego-fermate-questo-scempio
-layout: note
+layout: single
 categories:
 - Various
 tags:

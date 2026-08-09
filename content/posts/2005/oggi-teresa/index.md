@@ -2,7 +2,7 @@
 title: Oggi Teresa
 date: '2005-07-25T09:58:00+01:00'
 slug: oggi-teresa
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Kiri:Monoral
 date: '2011-06-10T15:37:41+01:00'
 slug: kirimonoral
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

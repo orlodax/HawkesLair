@@ -2,7 +2,7 @@
 title: Nala cresce...
 date: '2010-10-01T11:37:22+01:00'
 slug: nala-cresce
-layout: note
+layout: single
 categories:
 - Various
 tags:

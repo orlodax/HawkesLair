@@ -2,7 +2,7 @@
 title: Nota del 05/02/2008
 date: '2008-02-05T11:12:00+01:00'
 slug: nota-del-05-02-2008
-layout: note
+layout: single
 categories:
 - Anime
 thumbnail: library-by-tahra.jpg

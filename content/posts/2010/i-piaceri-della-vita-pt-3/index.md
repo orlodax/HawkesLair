@@ -2,7 +2,7 @@
 title: I piaceri della vita pt.3
 date: '2010-05-27T11:40:40+01:00'
 slug: i-piaceri-della-vita-pt-3
-layout: note
+layout: single
 categories:
 - Piaceri della vita
 postLang: it

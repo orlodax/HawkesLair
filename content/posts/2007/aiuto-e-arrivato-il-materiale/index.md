@@ -2,7 +2,7 @@
 title: Aiuto è arrivato il materiale! :(
 date: '2007-08-14T09:51:00+01:00'
 slug: aiuto-e-arrivato-il-materiale
-layout: note
+layout: single
 categories:
 - Various
 tags:

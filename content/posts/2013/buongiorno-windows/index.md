@@ -2,7 +2,7 @@
 title: Buongiorno Windows!
 date: '2013-02-02T10:30:40+01:00'
 slug: buongiorno-windows
-layout: note
+layout: single
 categories:
 - Various
 thumbnail: 4kdvzc-e1359799339614.jpg

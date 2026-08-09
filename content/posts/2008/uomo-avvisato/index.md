@@ -2,7 +2,7 @@
 title: Uomo AVVISATO
 date: '2008-07-18T09:35:00+01:00'
 slug: uomo-avvisato
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: I know my love, Angel
 date: '2011-07-30T17:02:47+01:00'
 slug: i-know-my-love
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

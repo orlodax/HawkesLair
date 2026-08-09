@@ -2,7 +2,7 @@
 title: The MOST signor concerto
 date: '2007-07-03T10:58:00+01:00'
 slug: the-most-signor-concerto
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: 2.jpg

@@ -2,7 +2,7 @@
 title: Don't you ever
 date: '2004-10-20T20:14:00+01:00'
 slug: dont-you-ever
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

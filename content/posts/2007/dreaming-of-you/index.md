@@ -2,7 +2,7 @@
 title: Dreaming of you
 date: '2007-05-17T12:21:00+01:00'
 slug: dreaming-of-you
-layout: note
+layout: single
 categories:
 - Various
 tags:

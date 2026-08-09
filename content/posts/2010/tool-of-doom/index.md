@@ -2,7 +2,7 @@
 title: Tool of Doom
 date: '2010-09-17T17:39:12+01:00'
 slug: tool-of-doom
-layout: note
+layout: single
 categories:
 - Various
 tags:

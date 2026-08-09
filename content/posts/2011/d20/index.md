@@ -2,7 +2,7 @@
 title: D20
 date: '2011-06-22T20:05:27+01:00'
 slug: d20
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

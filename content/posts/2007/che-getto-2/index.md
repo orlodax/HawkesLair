@@ -2,7 +2,7 @@
 title: Che getto 2
 date: '2007-08-28T13:37:00+01:00'
 slug: che-getto-2
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: img-0204.jpg

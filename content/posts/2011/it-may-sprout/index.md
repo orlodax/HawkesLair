@@ -2,7 +2,7 @@
 title: It may sprout...
 date: '2011-06-14T14:24:28+01:00'
 slug: it-may-sprout
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: en

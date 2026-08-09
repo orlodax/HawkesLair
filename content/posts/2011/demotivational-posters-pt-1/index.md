@@ -2,7 +2,7 @@
 title: Demotivational posters - pt.1
 date: '2011-03-10T17:10:21+01:00'
 slug: demotivational-posters-pt-1
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

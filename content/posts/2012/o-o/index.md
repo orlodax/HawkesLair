@@ -2,7 +2,7 @@
 title: o.O
 date: '2012-06-20T19:57:20+01:00'
 slug: o-o
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: schermata-del-2012-06-20-195704.jpg

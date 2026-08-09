@@ -2,7 +2,7 @@
 title: Hard Disk
 date: '2011-02-02T11:26:27+01:00'
 slug: hard-disk
-layout: note
+layout: single
 categories:
 - Various
 tags:

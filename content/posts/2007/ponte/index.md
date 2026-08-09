@@ -2,7 +2,7 @@
 title: Ponte
 date: '2007-07-19T11:15:00+01:00'
 slug: ponte
-layout: note
+layout: single
 categories:
 - Various
 tags:

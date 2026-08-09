@@ -2,7 +2,7 @@
 title: Ho trovato un gatto!!
 date: '2010-09-05T12:33:43+01:00'
 slug: ho-trovato-un-gatto
-layout: note
+layout: single
 categories:
 - Various
 tags:

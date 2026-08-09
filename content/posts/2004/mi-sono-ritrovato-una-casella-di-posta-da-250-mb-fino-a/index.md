@@ -2,7 +2,7 @@
 title: Mi sono ritrovato una casella di posta da 250 Mb. Fino a pochi giorni
 date: '2004-10-15T14:16:00+01:00'
 slug: mi-sono-ritrovato-una-casella-di-posta-da-250-mb-fino-a
-layout: note
+layout: single
 categories:
 - Various
 tags:

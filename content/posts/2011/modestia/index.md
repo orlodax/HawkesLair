@@ -2,7 +2,7 @@
 title: Modestia
 date: '2011-12-08T10:48:48+01:00'
 slug: modestia
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

@@ -2,7 +2,7 @@
 title: Eros ti odio
 date: '2010-05-08T19:44:00+01:00'
 slug: eros-ti-odio
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: stupid-cupid-dares-warchild-by-warchild15.jpg

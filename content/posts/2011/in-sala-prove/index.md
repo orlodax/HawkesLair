@@ -2,7 +2,7 @@
 title: In sala prove
 date: '2011-10-06T09:39:49+01:00'
 slug: in-sala-prove
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

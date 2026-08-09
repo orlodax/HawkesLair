@@ -2,7 +2,7 @@
 title: Welcome
 date: '2010-05-24T12:21:49+01:00'
 slug: welcome
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: LoL
 date: '2011-03-03T17:00:31+01:00'
 slug: lol
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

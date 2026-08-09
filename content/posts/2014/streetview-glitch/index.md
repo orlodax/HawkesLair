@@ -2,7 +2,7 @@
 title: Streetview glitch
 date: '2014-07-10T12:18:40+01:00'
 slug: streetview-glitch
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 5horse.jpg

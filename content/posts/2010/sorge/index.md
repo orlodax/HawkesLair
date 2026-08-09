@@ -2,7 +2,7 @@
 title: sorge di nuovo il sole?
 date: '2010-05-22T14:14:00+01:00'
 slug: sorge
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: dawn.jpg

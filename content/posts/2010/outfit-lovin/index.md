@@ -2,7 +2,7 @@
 title: Outfit lovin'
 date: '2010-12-27T20:03:01+01:00'
 slug: outfit-lovin
-layout: note
+layout: single
 categories:
 - Various
 tags:

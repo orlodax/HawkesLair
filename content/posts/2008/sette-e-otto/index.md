@@ -2,7 +2,7 @@
 title: '...sette e otto...'
 date: '2008-08-02T09:57:00+01:00'
 slug: sette-e-otto
-layout: note
+layout: single
 categories:
 - Anime
 thumbnail: fragole.jpg

@@ -2,7 +2,7 @@
 title: For my clumsy friends :)
 date: '2011-02-10T16:36:31+01:00'
 slug: for-my-clumsy-friends
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

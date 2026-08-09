@@ -2,7 +2,7 @@
 title: Il meglio di Sanremo finora
 date: '2012-02-17T18:39:42+01:00'
 slug: il-meglio-di-sanremo-finora
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

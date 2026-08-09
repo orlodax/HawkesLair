@@ -2,7 +2,7 @@
 title: take my hand
 date: '2010-04-15T06:53:00+01:00'
 slug: take-my-hand
-layout: note
+layout: single
 categories:
 - Emotions, Music
 thumbnail: take-my-hand-by-pinkbaby.jpg

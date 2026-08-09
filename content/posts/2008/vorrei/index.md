@@ -2,7 +2,7 @@
 title: Vorrei
 date: '2008-11-04T07:53:00+01:00'
 slug: vorrei
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Ideas

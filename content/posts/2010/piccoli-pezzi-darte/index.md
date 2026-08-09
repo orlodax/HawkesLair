@@ -2,7 +2,7 @@
 title: Piccoli pezzi d'arte
 date: '2010-05-26T22:50:02+01:00'
 slug: piccoli-pezzi-darte
-layout: note
+layout: single
 categories:
 - Various
 tags:

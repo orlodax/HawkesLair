@@ -2,7 +2,7 @@
 title: Contatore
 date: '2007-06-28T13:37:00+01:00'
 slug: contatore
-layout: note
+layout: single
 categories:
 - Various
 tags:

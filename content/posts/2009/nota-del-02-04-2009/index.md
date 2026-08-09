@@ -2,7 +2,7 @@
 title: Nota del 02/04/2009
 date: '2009-04-02T16:59:00+01:00'
 slug: nota-del-02-04-2009
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 3526.jpg

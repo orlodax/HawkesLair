@@ -2,7 +2,7 @@
 title: Nuove consapevolezze
 date: '2009-05-01T07:47:00+01:00'
 slug: nuove-consapevolezze
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

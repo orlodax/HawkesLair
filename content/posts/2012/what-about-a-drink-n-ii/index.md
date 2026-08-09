@@ -2,7 +2,7 @@
 title: What about a drink? n.II
 date: '2012-02-09T17:22:29+01:00'
 slug: what-about-a-drink-n-ii
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Various

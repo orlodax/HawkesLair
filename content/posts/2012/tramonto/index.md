@@ -2,7 +2,7 @@
 title: Tramonto
 date: '2012-10-04T12:02:29+01:00'
 slug: tramonto
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Nuova Categoria - Argomenti Scritturali
 date: '2011-06-06T19:54:21+01:00'
 slug: nuova-categoria-argomenti-scritturali
-layout: note
+layout: single
 categories:
 - Various
 tags:

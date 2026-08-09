@@ -2,7 +2,7 @@
 title: Nota del 17/01/2010
 date: '2010-01-17T14:49:00+01:00'
 slug: nota-del-17-01-2010
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 4197.jpg

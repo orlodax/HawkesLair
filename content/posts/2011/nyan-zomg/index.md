@@ -2,7 +2,7 @@
 title: Nyan zomg!
 date: '2011-12-18T16:03:19+01:00'
 slug: nyan-zomg
-layout: note
+layout: single
 categories:
 - Cose buffe
 tags:

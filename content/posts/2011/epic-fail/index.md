@@ -2,7 +2,7 @@
 title: Epic Fail
 date: '2011-01-09T20:34:37+01:00'
 slug: epic-fail
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

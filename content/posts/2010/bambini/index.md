@@ -2,7 +2,7 @@
 title: Bambini
 date: '2010-04-08T12:22:00+01:00'
 slug: bambini
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Ideas

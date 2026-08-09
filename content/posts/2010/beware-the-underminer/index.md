@@ -2,7 +2,7 @@
 title: Beware the Underminer!!
 date: '2010-12-10T15:48:16+01:00'
 slug: beware-the-underminer
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

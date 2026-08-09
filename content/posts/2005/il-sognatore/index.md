@@ -2,7 +2,7 @@
 title: Il sognatore
 date: '2005-05-10T14:18:00+01:00'
 slug: il-sognatore
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

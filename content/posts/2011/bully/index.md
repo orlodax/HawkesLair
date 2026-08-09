@@ -2,7 +2,7 @@
 title: Bully
 date: '2011-02-02T11:28:55+01:00'
 slug: bully
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

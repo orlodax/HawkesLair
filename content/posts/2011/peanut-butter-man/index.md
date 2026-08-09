@@ -2,7 +2,7 @@
 title: Peanut Butter Man
 date: '2011-08-12T19:40:37+01:00'
 slug: peanut-butter-man
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Various

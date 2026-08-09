@@ -2,7 +2,7 @@
 title: L'atelier dei fiori secchi
 date: '2020-05-15T21:15:22+01:00'
 slug: latelier-dei-fiori-secchi
-layout: note
+layout: single
 categories:
 - Emotions, Music
 cover: cover-dried-flowers-and-herbs-on-notebook-169270227.jpg

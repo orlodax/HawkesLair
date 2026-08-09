@@ -1,54 +1,40 @@
-{{/* One item in the timeline.
-
-     Short posts render in full — 247 of 466 posts here are under 600
-     characters, and a list of title-only links to two-sentence posts is a
-     dead archive. Longer posts get image + title + excerpt.
+{{/* One item in the timeline: image + title + excerpt, the same shape for
+     every post regardless of length.
 
      The image sits above the title at full column width and keeps its own
      proportions, as the original theme did. No crop, no forced ratio. */}}
 
-{{- $isNote := eq .Params.layout "note" -}}
 {{- $mediaName := or .Params.cover .Params.thumbnail -}}
 {{- $media := "" -}}
 {{- with $mediaName }}{{ $media = $.Resources.GetMatch . }}{{ end -}}
 
-<article class="entry{{ if $isNote }} entry--note{{ end }}"
+<article class="entry"
   {{- with .Params.theme }} data-post-theme="{{ . }}"{{ end }}
   {{- with .Params.accent }} style="{{ printf "--accent:%s" . | safeCSS }}"{{ end }}>
 
-  {{- if $isNote }}
-    <div class="entry-meta">
-      <a class="entry-permalink" href="{{ .RelPermalink }}">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
-      </a>
-      {{- with .Title }}<span class="dot">·</span><span>{{ . }}</span>{{ end }}
-    </div>
-    <div class="entry-body prose">{{ .Content }}</div>
-  {{- else }}
-    {{- with $media }}
-    <a class="entry-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
-      {{- $out := . -}}
-      {{- $sizeable := and (eq .ResourceType "image") (not (in (slice "gif" "svg") .MediaType.SubType)) -}}
-      {{- if and $sizeable (gt .Width 1100) -}}
-        {{- $out = .Resize "1100x q82" -}}
-      {{- end }}
-      <img src="{{ $out.RelPermalink }}"
-           {{ if $sizeable }}width="{{ $out.Width }}" height="{{ $out.Height }}"
-           style="{{ printf "max-width:%dpx" $out.Width | safeCSS }}"{{ end }}
-           alt="" loading="lazy" decoding="async">
-    </a>
+  {{- with $media }}
+  <a class="entry-media" href="{{ $.RelPermalink }}" tabindex="-1" aria-hidden="true">
+    {{- $out := . -}}
+    {{- $sizeable := and (eq .ResourceType "image") (not (in (slice "gif" "svg") .MediaType.SubType)) -}}
+    {{- if and $sizeable (gt .Width 1100) -}}
+      {{- $out = .Resize "1100x q82" -}}
     {{- end }}
-
-    <div class="entry-meta">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
-      {{- with .Params.series }}
-      <span class="dot">·</span><span>{{ . }}</span>
-      {{- end }}
-      {{- if gt .ReadingTime 3 }}
-      <span class="dot">·</span><span>{{ .ReadingTime }} min</span>
-      {{- end }}
-    </div>
-    <h2 class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title | default "Untitled" }}</a></h2>
-    <p class="entry-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
+    <img src="{{ $out.RelPermalink }}"
+         {{ if $sizeable }}width="{{ $out.Width }}" height="{{ $out.Height }}"
+         style="{{ printf "max-width:%dpx" $out.Width | safeCSS }}"{{ end }}
+         alt="" loading="lazy" decoding="async">
+  </a>
   {{- end }}
+
+  <div class="entry-meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+    {{- with .Params.series }}
+    <span class="dot">·</span><span>{{ . }}</span>
+    {{- end }}
+    {{- if gt .ReadingTime 3 }}
+    <span class="dot">·</span><span>{{ .ReadingTime }} min</span>
+    {{- end }}
+  </div>
+  <h2 class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title | default "Untitled" }}</a></h2>
+  <p class="entry-excerpt">{{ .Summary | plainify | truncate 220 }}</p>
 </article>

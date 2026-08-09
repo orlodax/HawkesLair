@@ -2,7 +2,7 @@
 title: Patterns
 date: '2012-05-01T12:23:00+01:00'
 slug: patterns
-layout: note
+layout: single
 categories:
 - Various
 tags:

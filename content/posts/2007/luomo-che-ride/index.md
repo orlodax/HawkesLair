@@ -2,7 +2,7 @@
 title: L'uomo che ride
 date: '2007-12-11T21:52:00+01:00'
 slug: luomo-che-ride
-layout: note
+layout: single
 categories:
 - Anime
 thumbnail: ghost-in-the-shell-36.png

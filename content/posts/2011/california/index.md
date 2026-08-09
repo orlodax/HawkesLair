@@ -2,7 +2,7 @@
 title: California...
 date: '2011-02-08T17:12:16+01:00'
 slug: california
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Getting noticed
 date: '2010-08-06T14:44:34+01:00'
 slug: getting-noticed
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

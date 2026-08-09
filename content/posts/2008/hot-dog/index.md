@@ -2,7 +2,7 @@
 title: Hot Dog
 date: '2008-11-14T08:12:00+01:00'
 slug: hot-dog
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 3205.jpg

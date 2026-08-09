@@ -2,7 +2,7 @@
 title: Signor concerto
 date: '2007-07-03T10:58:00+01:00'
 slug: signor-concerto
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Viaggi

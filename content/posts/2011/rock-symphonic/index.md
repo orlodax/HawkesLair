@@ -2,7 +2,7 @@
 title: Rock, Symphonic
 date: '2011-06-30T16:36:15+01:00'
 slug: rock-symphonic
-layout: note
+layout: single
 categories:
 - Emotions, Music
 - Ideas

@@ -2,7 +2,7 @@
 title: Guerra
 date: '2012-03-16T07:47:40+01:00'
 slug: guerra
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

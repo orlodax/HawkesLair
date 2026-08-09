@@ -2,7 +2,7 @@
 title: Questo mi serve
 date: '2012-02-06T21:09:27+01:00'
 slug: questo-mi-serve
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

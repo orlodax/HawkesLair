@@ -2,7 +2,7 @@
 title: Want some chocolate?
 date: '2010-12-27T20:05:11+01:00'
 slug: want-some-chocolate
-layout: note
+layout: single
 categories:
 - Various
 tags:

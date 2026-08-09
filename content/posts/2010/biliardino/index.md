@@ -2,7 +2,7 @@
 title: Biliardino!
 date: '2010-04-06T10:16:00+01:00'
 slug: biliardino
-layout: note
+layout: single
 categories:
 - Various
 tags:

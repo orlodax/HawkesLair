@@ -2,7 +2,7 @@
 title: Stendhal
 date: '2011-01-31T20:29:24+01:00'
 slug: stendhal
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

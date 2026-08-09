@@ -2,7 +2,7 @@
 title: Il mio gatto è sospetto...
 date: '2012-02-20T13:21:57+01:00'
 slug: il-mio-gatto-e-sospetto
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 427036-10150568501607515-61586842514-8788165.jpg

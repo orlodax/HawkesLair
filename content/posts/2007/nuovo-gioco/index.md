@@ -2,7 +2,7 @@
 title: Nuovo gioco
 date: '2007-12-06T23:03:00+01:00'
 slug: nuovo-gioco
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2414.jpg

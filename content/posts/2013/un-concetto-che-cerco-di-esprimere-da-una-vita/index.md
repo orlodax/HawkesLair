@@ -2,7 +2,7 @@
 title: Un concetto che cerco di esprimere da una vita
 date: '2013-09-02T13:23:34+01:00'
 slug: un-concetto-che-cerco-di-esprimere-da-una-vita
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Ideas

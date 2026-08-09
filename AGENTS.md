@@ -88,7 +88,7 @@ in the home timeline (where a bare relative path would 404).
 ```yaml
 title: "Menti selvagge – pt.4"
 date: 2010-09-22T18:02:00+02:00
-layout: chapter        # note | single | photo | chapter
+layout: chapter        # single | photo | chapter
 theme: parchment       # parchment | ink | ember | moss  (optional)
 accent: "#8b4513"      # one-off tint, no preset needed  (optional)
 cover: cover-foo.jpg   # featured image — post header + list image
@@ -103,10 +103,16 @@ comments: false        # suppress Giscus on this post
 
 | layout | for | behaviour |
 |---|---|---|
-| `note` | posts under ~600 chars (247 of them) | no title header; **renders in full on the index** |
-| `single` | ordinary posts | standard |
-| `photo` | image-led posts | wider measure, minimal chrome |
-| `chapter` | the fiction serials | series index, per-chapter prev/next, optional TOC |
+| `single` | ordinary posts (371) | standard |
+| `photo` | image-led posts (68) | wider measure, minimal chrome |
+| `chapter` | the fiction serials (27) | series index, per-chapter prev/next, optional TOC |
+
+There was a fourth, `note`, for the 247 posts under ~600 characters: no title
+header, and the whole body rendered inline in the timeline instead of an
+excerpt. It was dropped. An inline block of prose is a device to use *within* a
+post, not a layout for a whole one — in the timeline it read as an unattributed
+quotation wedged between its neighbours, with no picture and no linked title.
+Every post now gets the same treatment. Don't reintroduce it.
 
 ### Covers vs thumbnails
 

@@ -2,7 +2,7 @@
 title: Dattilografia
 date: '2011-07-26T16:29:55+01:00'
 slug: dattilografia
-layout: note
+layout: single
 categories:
 - Various
 tags:

@@ -2,7 +2,7 @@
 title: Face of Evil
 date: '2010-08-17T18:33:30+01:00'
 slug: face-of-evil
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

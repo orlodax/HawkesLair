@@ -2,7 +2,7 @@
 title: Fateme causa
 date: '2011-07-13T19:32:36+01:00'
 slug: fateme-causa
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

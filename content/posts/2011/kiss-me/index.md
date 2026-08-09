@@ -2,7 +2,7 @@
 title: Kiss me...
 date: '2011-08-02T22:09:33+01:00'
 slug: kiss-me
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

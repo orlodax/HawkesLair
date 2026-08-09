@@ -2,7 +2,7 @@
 title: Well of Doom
 date: '2010-11-22T19:24:33+01:00'
 slug: well-of-doom
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

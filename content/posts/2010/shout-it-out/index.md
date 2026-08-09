@@ -2,7 +2,7 @@
 title: Shout it out
 date: '2010-07-02T20:26:36+01:00'
 slug: shout-it-out
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

@@ -2,7 +2,7 @@
 title: L'esame di ammissione all'università è l'iscrizione
 date: '2004-10-04T09:08:00+01:00'
 slug: lesame-di-ammissione-alluniversita-e-liscrizione
-layout: note
+layout: single
 categories:
 - Various
 tags:

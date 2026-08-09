@@ -2,7 +2,7 @@
 title: Repulisti
 date: '2013-02-02T15:58:14+01:00'
 slug: repulisti
-layout: note
+layout: single
 categories:
 - Various
 thumbnail: ordinare-casa.jpg

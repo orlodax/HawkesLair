@@ -2,7 +2,7 @@
 title: Nota del 06/10/2007
 date: '2007-10-06T11:41:00+01:00'
 slug: nota-del-06-10-2007
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: 2247.jpg

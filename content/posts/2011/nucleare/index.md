@@ -2,7 +2,7 @@
 title: Nucleare
 date: '2011-06-04T12:21:17+01:00'
 slug: nucleare
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

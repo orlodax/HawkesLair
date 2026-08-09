@@ -2,7 +2,7 @@
 title: Sono stato a un concerto
 date: '2012-07-17T16:20:35+01:00'
 slug: sono-stato-a-un-concerto
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

@@ -2,7 +2,7 @@
 title: Sleepy
 date: '2011-01-02T17:45:44+01:00'
 slug: sleepy
-layout: note
+layout: single
 categories:
 - Various
 tags:

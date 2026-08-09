@@ -2,7 +2,7 @@
 title: Amati Tachikoma!!
 date: '2007-12-11T21:49:00+01:00'
 slug: amati-tachikoma
-layout: note
+layout: single
 categories:
 - Anime
 thumbnail: ghost-in-the-shell-23.jpg

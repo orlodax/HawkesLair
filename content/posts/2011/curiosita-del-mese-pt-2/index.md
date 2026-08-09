@@ -2,7 +2,7 @@
 title: Curiosità del mese - pt.2
 date: '2011-05-01T18:37:45+01:00'
 slug: curiosita-del-mese-pt-2
-layout: note
+layout: single
 categories:
 - Various
 tags:

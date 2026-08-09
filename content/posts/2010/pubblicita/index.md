@@ -2,7 +2,7 @@
 title: Pubblicità
 date: '2010-12-14T18:17:27+01:00'
 slug: pubblicita
-layout: note
+layout: single
 categories:
 - Various
 tags:

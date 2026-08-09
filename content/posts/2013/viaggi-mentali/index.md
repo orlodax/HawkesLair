@@ -2,7 +2,7 @@
 title: Viaggi Mentali
 date: '2013-12-30T11:36:55+01:00'
 slug: viaggi-mentali
-layout: note
+layout: single
 categories:
 - Stories
 - Viaggi Mentali

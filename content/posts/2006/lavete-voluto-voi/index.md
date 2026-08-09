@@ -2,7 +2,7 @@
 title: L'avete voluto voi...
 date: '2006-06-23T15:52:00+01:00'
 slug: lavete-voluto-voi
-layout: note
+layout: single
 categories:
 - Ideas
 postLang: it

@@ -2,7 +2,7 @@
 title: Odio il GSE
 date: '2012-06-20T15:37:16+01:00'
 slug: odio-il-gse
-layout: note
+layout: single
 categories:
 - Various
 tags:

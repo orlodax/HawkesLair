@@ -2,7 +2,7 @@
 title: Ce la posso fa...?
 date: '2011-12-09T17:33:58+01:00'
 slug: ce-la-posso-fa
-layout: note
+layout: single
 categories:
 - Various
 tags:

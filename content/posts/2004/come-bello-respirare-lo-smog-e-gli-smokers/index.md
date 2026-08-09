@@ -2,7 +2,7 @@
 title: Com'è bello respirare lo smog e gli smokers
 date: '2004-10-29T15:19:00+01:00'
 slug: come-bello-respirare-lo-smog-e-gli-smokers
-layout: note
+layout: single
 categories:
 - Cose buffe
 postLang: it

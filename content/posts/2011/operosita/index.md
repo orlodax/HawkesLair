@@ -2,7 +2,7 @@
 title: Operosità
 date: '2011-03-02T11:41:17+01:00'
 slug: operosita
-layout: note
+layout: single
 categories:
 - Various
 tags:

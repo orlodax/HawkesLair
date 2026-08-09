@@ -2,7 +2,7 @@
 title: Pericolo 2
 date: '2007-10-08T10:27:00+01:00'
 slug: pericolo-2
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: img-0209.jpg

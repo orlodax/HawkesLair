@@ -2,7 +2,7 @@
 title: Retro
 date: '2011-07-27T20:51:45+01:00'
 slug: retro
-layout: note
+layout: single
 categories:
 - Various
 tags:

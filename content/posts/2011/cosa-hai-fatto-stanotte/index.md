@@ -2,7 +2,7 @@
 title: Cosa hai fatto stanotte?
 date: '2011-05-31T15:59:15+01:00'
 slug: cosa-hai-fatto-stanotte
-layout: note
+layout: single
 categories:
 - Cose buffe
 - Various

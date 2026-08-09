@@ -2,7 +2,7 @@
 title: Ganci tecnologici nel ghost
 date: '2012-10-11T16:14:50+01:00'
 slug: ganci-tecnologici-nel-ghost
-layout: note
+layout: single
 categories:
 - Various
 postLang: it

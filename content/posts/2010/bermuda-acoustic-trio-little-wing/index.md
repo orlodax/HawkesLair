@@ -2,7 +2,7 @@
 title: Bermuda Acoustic Trio - Little Wing
 date: '2010-08-29T16:55:06+01:00'
 slug: bermuda-acoustic-trio-little-wing
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it

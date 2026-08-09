@@ -2,7 +2,7 @@
 title: Pericolo 3
 date: '2007-10-08T10:29:00+01:00'
 slug: pericolo-3
-layout: note
+layout: single
 categories:
 - Cose buffe
 thumbnail: no-oltrepassing.jpg

@@ -2,7 +2,7 @@
 title: Funk it
 date: '2011-07-18T19:31:47+01:00'
 slug: funk-it
-layout: note
+layout: single
 categories:
 - Emotions, Music
 postLang: it
