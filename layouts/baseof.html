@@ -1,0 +1,20 @@
+<!doctype html>
+{{/* `lang` as a front matter key was removed in Hugo 0.144, so per-post
+     language rides on `postLang` instead. */}}
+<html lang="{{ or .Params.postLang site.Language.Locale }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  <div class="site">
+    {{ partial "sidebar.html" . }}
+    <div class="site-main">
+      <main id="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{{/* A note is a handful of sentences. Giving it a big title block and a
+     byline would be more chrome than content, so the date is the header
+     and the text starts immediately. */}}
+{{ define "main" }}
+<article class="wrap post post--note"
+  {{- with .Params.theme }} data-post-theme="{{ . }}"{{ end }}
+  {{- with .Params.accent }} style="{{ printf "--accent:%s" . | safeCSS }}"{{ end }}>
+
+  <header class="post-header">
+    {{ partial "post-meta.html" . }}
+    {{ with .Title }}<h1 class="post-title" style="font-size:var(--step-1)">{{ . }}</h1>{{ end }}
+  </header>
+
+  {{ partial "post-cover.html" . }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{ partial "post-footer.html" . }}
+  {{ partial "comments.html" . }}
+</article>
+{{ end }}

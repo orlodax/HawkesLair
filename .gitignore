@@ -1,0 +1,21 @@
+# Hugo build output
+/public/
+/public_prod/
+/resources/_gen/
+/.hugo_build.lock
+
+# Migration working files (the converter is tracked, its scratch output is not)
+/tools/wp2hugo/.cache/
+/tools/wp2hugo/*.log
+/tools/wp2hugo/report/
+*.pyc
+__pycache__/
+.venv/
+
+# The source export — large, and everything derived from it is committed
+/WXRexport.xml
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

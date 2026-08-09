@@ -1,0 +1,24 @@
+{{/* Featured image at the head of a post.
+
+     Width follows the column and height is derived from it, so the
+     picture keeps its own proportions — the width/height attributes below
+     are the *resized file's* real dimensions, which is what lets the
+     browser reserve the right space without distorting anything. */}}
+
+{{- with .Params.cover -}}
+  {{- $img := $.Resources.GetMatch . -}}
+  {{- with $img }}
+  <figure class="post-cover">
+    {{- $out := . -}}
+    {{- $sizeable := and (eq .ResourceType "image") (not (in (slice "gif" "svg") .MediaType.SubType)) -}}
+    {{- if and $sizeable (gt .Width 1400) -}}
+      {{- $out = .Resize "1400x q85" -}}
+    {{- end }}
+    <img src="{{ $out.RelPermalink }}"
+         {{ if $sizeable }}width="{{ $out.Width }}" height="{{ $out.Height }}"
+         style="{{ printf "max-width:%dpx" $out.Width | safeCSS }}"{{ end }}
+         alt="{{ $.Params.coverAlt | default $.Title }}" decoding="async">
+    {{- with $.Params.coverCaption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{- end }}
+{{- end -}}

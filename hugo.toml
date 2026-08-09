@@ -1,0 +1,70 @@
+# Production. `hugo` builds with --environment production by default.
+# `hugo server` defaults to the development environment, which overrides this
+# with a root baseURL in config/development/hugo.toml — otherwise every asset
+# and link would carry the /hawkeslair/ prefix while the dev server serves
+# from the root, and the whole site renders unstyled with 404 links.
+baseURL = "https://orlodax.github.io/hawkeslair/"
+title = "Hawke's Lair"
+locale = "it-IT"
+defaultContentLanguage = "it"
+timeZone = "Europe/Rome"
+enableEmoji = true
+
+# Imported posts keep their original numeric/Blogger slugs as aliases,
+# so nothing that ever worked stops working.
+disableKinds = []
+
+[pagination]
+  pagerSize = 30
+
+[permalinks]
+  posts = "/:year/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.goldmark.renderer]
+    # Required: 22 years of imported content contains raw HTML
+    # (YouTube iframes, a couple of tables). Content is ours, so this is safe.
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    tabWidth = 2
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[params]
+  description = "Appunti, racconti e cose buffe. Dal 2004."
+  dateFormat = "2 Jan 2006"
+  # Posts shorter than this render in full on the index instead of as a link.
+  inlineThreshold = 600
+
+  [params.giscus]
+    enable = false          # flip to true after enabling Discussions on the repo
+    repo = "orlodax/hawkeslair"
+    repoId = ""             # from https://giscus.app
+    category = "Comments"
+    categoryId = ""
+    mapping = "pathname"
+    reactionsEnabled = "1"
+    lang = "it"
+
+[[menus.main]]
+  name = "Archivio"
+  url = "/archivio/"
+  weight = 10
+
+[[menus.main]]
+  name = "Categorie"
+  url = "/categories/"
+  weight = 20
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[services.rss]
+  limit = 50

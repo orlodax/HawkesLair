@@ -1,0 +1,32 @@
+{{/* Serial fiction (Menti Selvagge, Il ritorno dei Ra'Hesh, Scynt...).
+     These run to 130k characters, so they get a table of contents, a
+     chapter index, and prev/next navigation within the series. */}}
+{{ define "main" }}
+<article class="wrap post post--chapter"
+  {{- with .Params.theme }} data-post-theme="{{ . }}"{{ end }}
+  {{- with .Params.accent }} style="{{ printf "--accent:%s" . | safeCSS }}"{{ end }}>
+
+  <header class="post-header">
+    {{ partial "post-meta.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  {{ partial "post-cover.html" . }}
+  {{ partial "series-nav.html" . }}
+
+  {{ if and .Params.toc (gt (len .TableOfContents) 60) }}
+  <nav class="series-box" aria-label="Indice">
+    <h2>In questo capitolo</h2>
+    {{ .TableOfContents }}
+  </nav>
+  {{ end }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{ partial "series-pager.html" . }}
+  {{ partial "post-footer.html" . }}
+  {{ partial "comments.html" . }}
+</article>
+{{ end }}

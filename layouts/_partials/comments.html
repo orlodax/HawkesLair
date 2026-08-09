@@ -1,0 +1,44 @@
+{{- if ne .Params.comments false -}}
+<section class="comments">
+
+  {{/* Comments carried over from WordPress. Static — they are history,
+       not a live thread. */}}
+  {{- with .Params.archived_comments }}
+  <h2>{{ len . }} commenti d'archivio</h2>
+  <p class="comments-note">Dalla vecchia versione del blog su WordPress.</p>
+  <ul class="comment-archive">
+    {{- range . }}
+    <li class="comment">
+      <div class="comment-head">
+        <span class="comment-author">{{ .author }}</span>
+        <span class="dot">·</span>
+        <time datetime="{{ .date }}">{{ (time .date).Format site.Params.dateFormat }}</time>
+      </div>
+      <div class="comment-body prose">{{ .content | safeHTML }}</div>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{- with site.Params.giscus }}
+  {{- if .enable }}
+  <h2>Commenti</h2>
+  <script src="https://giscus.app/client.js"
+          data-repo="{{ .repo }}"
+          data-repo-id="{{ .repoId }}"
+          data-category="{{ .category }}"
+          data-category-id="{{ .categoryId }}"
+          data-mapping="{{ .mapping }}"
+          data-reactions-enabled="{{ .reactionsEnabled }}"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="{{ .lang }}"
+          crossorigin="anonymous"
+          async>
+  </script>
+  {{- end }}
+  {{- end }}
+
+</section>
+{{- end -}}

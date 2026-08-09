@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="wrap">
+    {{ site.Title }} — dal 2004 ·
+    <a href="{{ "/archivio/" | relURL }}">Archivio</a> ·
+    {{ with site.Home.OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('[data-theme-toggle]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var root = document.documentElement;
+    // Dark is the default (the original theme was dark-only), so the
+    // toggle simply opts in and out of light.
+    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();
+</script>

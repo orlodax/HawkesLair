@@ -1,0 +1,21 @@
+{{/* Image-dominant post: wider measure, minimal chrome around the pictures. */}}
+{{ define "main" }}
+<article class="wrap post post--photo"
+  {{- with .Params.theme }} data-post-theme="{{ . }}"{{ end }}
+  {{- with .Params.accent }} style="{{ printf "--accent:%s" . | safeCSS }}"{{ end }}>
+
+  <header class="post-header">
+    {{ partial "post-meta.html" . }}
+    {{ with .Title }}<h1 class="post-title">{{ . }}</h1>{{ end }}
+  </header>
+
+  {{ partial "post-cover.html" . }}
+
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  {{ partial "post-footer.html" . }}
+  {{ partial "comments.html" . }}
+</article>
+{{ end }}

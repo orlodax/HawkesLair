@@ -1,0 +1,16 @@
+{{- with .Params.series -}}
+{{- $series := . -}}
+{{- $chapters := sort (where (where site.RegularPages "Section" "posts") "Params.series" $series) "Params.series_order" -}}
+{{- $prev := false }}{{ $next := false }}{{ $found := false -}}
+{{- range $chapters -}}
+  {{- if $found }}{{ if not $next }}{{ $next = . }}{{ end }}
+  {{- else if eq .RelPermalink $.RelPermalink }}{{ $found = true }}
+  {{- else }}{{ $prev = . }}{{ end -}}
+{{- end -}}
+{{- if or $prev $next }}
+<nav class="post-nav" aria-label="Capitolo precedente e successivo">
+  {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+  {{- with $next }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+</nav>
+{{- end }}
+{{- end -}}

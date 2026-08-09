@@ -1,0 +1,21 @@
+{{- with .Params.series -}}
+{{- $series := . -}}
+{{- $chapters := where (where site.RegularPages "Section" "posts") "Params.series" $series -}}
+{{- $chapters = sort $chapters "Params.series_order" -}}
+{{- if gt (len $chapters) 1 }}
+<nav class="series-box" aria-label="Capitoli della serie">
+  <h2>{{ $series }} — {{ len $chapters }} capitoli</h2>
+  <ol>
+    {{- range $chapters }}
+    <li{{ if eq .RelPermalink $.RelPermalink }} aria-current="true"{{ end }}>
+      {{- if eq .RelPermalink $.RelPermalink -}}
+        {{ .Title }}
+      {{- else -}}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- end -}}
+    </li>
+    {{- end }}
+  </ol>
+</nav>
+{{- end }}
+{{- end -}}

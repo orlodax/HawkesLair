@@ -1,0 +1,30 @@
+{{/* Images live inside their page bundle and are written as bare filenames
+     (![](foo.jpg)). A raw relative src resolves against whatever page is
+     rendering, so it 404s on the home timeline where short posts render in
+     full. Resolving the bundle resource here makes the URL absolute, and
+     gives us intrinsic dimensions + lazy loading for free. */}}
+
+{{- $src   := .Destination -}}
+{{- $alt   := .Text | plainify -}}
+{{- $title := .Title -}}
+
+{{- $res := "" -}}
+{{- if not (urls.Parse $src).IsAbs -}}
+  {{- $res = .Page.Resources.GetMatch $src -}}
+{{- end -}}
+
+{{- with $res -}}
+  {{- $img := . -}}
+  {{/* Animated GIFs must not be re-encoded, and SVGs have no pixel size. */}}
+  {{- $sizeable := and (eq .ResourceType "image") (not (in (slice "gif" "svg") .MediaType.SubType)) -}}
+  {{- if and $sizeable (gt .Width 1400) -}}
+    {{- $img = .Resize "1400x q85" -}}
+  {{- end -}}
+  <img src="{{ $img.RelPermalink }}"
+       {{ if $sizeable }}width="{{ $img.Width }}" height="{{ $img.Height }}"{{ end }}
+       alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}
+       loading="lazy" decoding="async">
+{{- else -}}
+  <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with $title }} title="{{ . }}"{{ end }}
+       loading="lazy" decoding="async">
+{{- end -}}

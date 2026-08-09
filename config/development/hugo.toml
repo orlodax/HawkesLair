@@ -1,0 +1,7 @@
+# Development overrides, applied automatically by `hugo server`
+# (which runs with --environment development).
+#
+# Production lives under a /hawkeslair/ path on github.io, but the dev server
+# serves from the root and does NOT strip that prefix. Without this override
+# the local site loads with no CSS and every link 404s.
+baseURL = "http://localhost:1313/"

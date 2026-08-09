@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ with .Title }}{{ . }} · {{ end }}{{ site.Title }}{{ end }}</title>
+
+{{- $desc := "" -}}
+{{- with .Description }}{{ $desc = . }}
+{{- else }}{{ if .IsPage }}{{ $desc = .Summary | plainify | truncate 158 }}{{ else }}{{ $desc = site.Params.description }}{{ end }}{{ end -}}
+<meta name="description" content="{{ $desc }}">
+
+{{/* One stylesheet, concatenated from the token layer up. */}}
+{{- $css := slice
+      (resources.Get "css/tokens.css")
+      (resources.Get "css/themes.css")
+      (resources.Get "css/base.css")
+    | resources.Concat "css/main.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
+{{- with site.Home.OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{/* Apply the saved theme before first paint so the page never flashes. */}}
+<script>(function(){try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>

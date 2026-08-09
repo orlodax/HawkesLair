@@ -1,0 +1,23 @@
+<footer class="post-footer">
+  {{- with .GetTerms "tags" }}
+  <ul class="tag-list">
+    {{- range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  {{/* .Params.wp_original is kept in front matter as provenance, but printing
+       the old URL under all 466 posts is noise — and that host will not
+       outlive this site. */}}
+
+  {{/* Serial chapters get their own prev/next from series-pager.html,
+       ordered by chapter rather than by date — don't duplicate it here. */}}
+  {{- $prev := .PrevInSection }}{{ $next := .NextInSection }}
+  {{- if and (not .Params.series) (or $prev $next) }}
+  <nav class="post-nav">
+    {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title | default (.Date.Format site.Params.dateFormat) }}</a>{{ end }}
+    {{- with $next }}<a class="next" href="{{ .RelPermalink }}">{{ .Title | default (.Date.Format site.Params.dateFormat) }} →</a>{{ end }}
+  </nav>
+  {{- end }}
+</footer>

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="wrap">
+  {{- $posts := where site.RegularPages "Section" "posts" -}}
+  {{- $paged := .Paginate $posts -}}
+  <div class="timeline">
+    {{- range $paged.Pages }}
+      {{ partial "entry.html" . }}
+    {{- end }}
+  </div>
+  {{ partial "pager.html" $paged }}
+</div>
+{{ end }}

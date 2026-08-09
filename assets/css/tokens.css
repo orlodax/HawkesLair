@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------------
+   Design tokens, tuned to match the original WordPress theme
+   (Twenty Fourteen, dark colour scheme) that this blog ran for years.
+
+   Nothing below this file hardcodes a colour or a size. Per-post
+   overrides work by re-binding these on <article>, so a single
+   front-matter value can retint an entire post.
+   ------------------------------------------------------------------ */
+
+/* Lato — SIL Open Font License 1.1. Latin subset, self-hosted, taken
+   from the original theme so the site reads identically offline. */
+@font-face {
+  font-family: 'Lato'; font-style: normal; font-weight: 300; font-display: swap;
+  src: url('../fonts/lato-latin-300-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato'; font-style: italic; font-weight: 300; font-display: swap;
+  src: url('../fonts/lato-latin-300-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('../fonts/lato-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato'; font-style: italic; font-weight: 400; font-display: swap;
+  src: url('../fonts/lato-latin-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url('../fonts/lato-latin-700-normal.woff2') format('woff2');
+}
+
+:root {
+  /* The original was dark-only, so dark is the default here too —
+     the header toggle opts into light rather than the other way round. */
+  --bg:          #000000;
+  --bg-alt:      #1a1a1a;
+  --fg:          #eeeeee;
+  --muted:       #767676;
+  --rule:        #2b2b2b;
+  --accent:      #41b32a;   /* Twenty Fourteen green, lifted for black */
+  --accent-fg:   #000000;
+  --accent-soft: #14260f;
+  --code-bg:     #131313;
+  --mark:        #3a4d21;
+  --sidebar-bg:  #000000;
+
+  --font-body: Lato, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-ui:   var(--font-body);
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, "Liberation Mono", monospace;
+
+  /* Original: 16px body, 24px line-height, 33px/300 uppercase titles. */
+  --step--1: 0.75rem;                                    /* 12px meta */
+  --step-0:  1rem;                                       /* 16px body */
+  --step-1:  clamp(1.15rem, 1.05rem + 0.4vw, 1.35rem);
+  --step-2:  clamp(1.35rem, 1.15rem + 0.9vw, 1.75rem);
+  --step-3:  clamp(1.6rem, 1.25rem + 1.5vw, 2.06rem);    /* 33px titles */
+
+  /* Content column. Fluid rather than a fixed pixel width:
+       - narrow windows  -> fills the window (the min() in .wrap)
+       - ~1180px window  -> 944px, the original theme's measure
+       - wide monitors   -> keeps growing instead of stranding whitespace
+     The clamp floor is what reproduces the original at typical widths. */
+  --measure:      clamp(59rem, 76vw, 88rem);
+  --measure-wide: clamp(68rem, 88vw, 100rem);
+  --sidebar-w:    13.9rem;   /* 222px, as the original */
+
+  --gap:     1.5rem;
+  --gap-lg:  3rem;
+  --radius:  2px;
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg:          #ffffff;
+  --bg-alt:      #f2f2f2;
+  --fg:          #2b2b2b;
+  --muted:       #767676;
+  --rule:        #e0e0e0;
+  --accent:      #24890d;   /* the theme's original green */
+  --accent-fg:   #ffffff;
+  --accent-soft: #e8f3e4;
+  --code-bg:     #f4f4f4;
+  --mark:        #f7f0a8;
+  --sidebar-bg:  #000000;   /* the sidebar stayed dark in both schemes */
+
+  color-scheme: light;
+}

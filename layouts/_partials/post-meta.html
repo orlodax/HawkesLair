@@ -1,0 +1,14 @@
+<div class="entry-meta">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format site.Params.dateFormat }}</time>
+  {{/* .GetTerms, not a hand-built urlize path: Hugo slugs "MS I - Capitoli"
+       as "ms-i---capitoli", which urlize does not reproduce. */}}
+  {{- with .GetTerms "categories" }}
+  <span class="dot">·</span>
+  <span>
+    {{- range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end -}}
+  </span>
+  {{- end }}
+  {{- if gt .ReadingTime 3 }}
+  <span class="dot">·</span><span>{{ .ReadingTime }} min di lettura</span>
+  {{- end }}
+</div>

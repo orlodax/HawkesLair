@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hugo",
+      "runtimeExecutable": "C:\\Users\\orlod\\AppData\\Local\\Microsoft\\WinGet\\Links\\hugo.exe",
+      "runtimeArgs": ["server", "--port", "1313", "--disableFastRender",
+                      "--renderToMemory",
+                      "--environment", "development",
+                      "--baseURL", "http://localhost:1313/"],
+      "port": 1313
+    }
+  ]
+}

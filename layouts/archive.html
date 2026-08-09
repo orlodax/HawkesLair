@@ -1,0 +1,29 @@
+{{/* Full 22-year index, grouped by year. Assigned via `layout: archive`
+     on content/archivio.md. */}}
+{{ define "main" }}
+<div class="wrap">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </header>
+
+  {{- $posts := where site.RegularPages "Section" "posts" }}
+  <p class="entry-excerpt">{{ len $posts }} post, dal {{ (index (last 1 $posts) 0).Date.Format "2006" }} a oggi.</p>
+
+  {{- range $posts.GroupByDate "2006" }}
+  <section class="year-group">
+    <h2>{{ .Key }}</h2>
+    <ul class="archive-list">
+      {{- range .Pages }}
+      <li>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan" }}</time>
+        <a href="{{ .RelPermalink }}">
+          {{- with .Title }}{{ . }}{{ else }}<span class="untitled">{{ .Summary | plainify | truncate 70 }}</span>{{ end -}}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{ end }}
