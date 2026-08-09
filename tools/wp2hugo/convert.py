@@ -55,6 +55,12 @@ SERIES_BY_CATEGORY = {
 # Categories that are organisational noise rather than subjects.
 DROP_CATEGORIES = {"Uncategorized"}
 
+# WordPress' auto-generated privacy page is boilerplate describing comment
+# forms, Gravatar and login cookies — none of which exist on a static site.
+# It is replaced by a hand-written content/privacy/index.md; skip it so a
+# re-run does not resurrect the template.
+SKIP_SLUGS = {"privacy-policy-2"}
+
 NOTE_MAX_CHARS  = 600     # below this, a post renders in full on the index
 PHOTO_MIN_IMGS  = 2
 PHOTO_MAX_CHARS = 1200
@@ -425,6 +431,9 @@ def main() -> int:
 
         ptype, status = g("wp:post_type"), g("wp:status")
         if ptype not in ("post", "page") or status != "publish":
+            continue
+        if g("wp:post_name") in SKIP_SLUGS:
+            stats["skipped_by_slug"] += 1
             continue
 
         raw_title = (it.findtext("title") or "").strip()

@@ -61,8 +61,8 @@
        - ~1180px window  -> 944px, the original theme's measure
        - wide monitors   -> keeps growing instead of stranding whitespace
      The clamp floor is what reproduces the original at typical widths. */
-  --measure:      clamp(59rem, 76vw, 88rem);
-  --measure-wide: clamp(68rem, 88vw, 100rem);
+  --measure:      clamp(59rem, 82vw, 92rem);
+  --measure-wide: clamp(68rem, 90vw, 104rem);
   --sidebar-w:    13.9rem;   /* 222px, as the original */
 
   --gap:     1.5rem;

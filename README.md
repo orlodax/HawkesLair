@@ -140,15 +140,26 @@ both schemes, as it did originally.
 
 ### Width
 
-The content column is fluid rather than a fixed pixel width:
+Two things control it, in `tokens.css` and `base.css`:
 
 ```css
---measure: clamp(59rem, 76vw, 88rem);
-.wrap { width: min(100% - 2.5rem, var(--measure)); }
+--measure: clamp(59rem, 82vw, 92rem);          /* the reading column      */
+.site    { max-width: 110rem; margin-inline: auto; }  /* the whole shell  */
 ```
 
-Narrow windows fill the viewport; around 1180px it lands on the original's
-945px; wide monitors keep growing instead of stranding whitespace.
+The `max-width` on `.site` is the important one. Without it the sidebar and
+column sat hard against the left edge and dumped every leftover pixel on the
+right — 754px of dead space at 2400px wide — which reads as "too narrow" even
+though the column was generous. Centring the shell fixed the perception; the
+raised `--measure` did the rest.
+
+Measured: 1180px window → 910px column · 1920px → 1472px · 2400px → 1472px
+centred with even margins · 375px → 335px stacked.
+
+At the top end that is ~184 characters per line, which is wide for prose. If
+you ever want a readability cap on post bodies without narrowing the lists,
+add `.post .prose { max-width: 62rem; }` — images and code blocks would need
+to be exempted to keep spanning the full column.
 
 ### Images
 
@@ -198,6 +209,19 @@ by hand there will be lost, so once you start editing posts, stop re-running it.
   77 numeric slugs
 - Rewrites internal `?p=<id>` cross-links to Hugo `relref`
 - Keeps every original permalink as an `alias`
+
+## Privacy page
+
+`content/privacy/index.md` is hand-written and replaces WordPress' generated
+one, which was untouched boilerplate: it named the old netsons domain and
+described comment forms, Gravatar, login cookies and media uploads that do not
+exist on a static site. The replacement states what is actually true — no
+cookies, no analytics, no forms — and covers the two things that *are* real:
+GitHub Pages' own server logs, and the third-party embeds in some posts.
+
+The old `/privacy-policy-2/` URL is kept as an alias, and that slug is in
+`SKIP_SLUGS` in `convert.py` so re-running the converter will not restore the
+boilerplate.
 
 ## Known gaps
 

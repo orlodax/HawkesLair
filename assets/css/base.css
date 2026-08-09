@@ -41,6 +41,12 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   min-height: 100vh;
+  /* Centred rather than pinned left: without this the sidebar + column sat
+     against the left edge and dumped all the leftover width on the right,
+     which reads as "too narrow" on a wide monitor even when the column
+     itself is generous. */
+  max-width: 110rem;
+  margin-inline: auto;
 }
 @media (min-width: 62rem) {
   .site { grid-template-columns: var(--sidebar-w) minmax(0, 1fr); }
