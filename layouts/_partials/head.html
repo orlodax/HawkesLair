@@ -22,9 +22,10 @@
 <link rel="canonical" href="{{ .Permalink }}">
 
 {{/* Apply saved theme and sidebar state before first paint, so neither
-     flashes. The sidebar defaults to closed on narrow screens. */}}
+     flashes. Only an explicit choice is set here — the responsive default
+     is CSS's job, because a matchMedia check at parse time can fire while
+     the window is still sizing and strand the sidebar closed on desktop. */}}
 <script>(function(){var r=document.documentElement;try{
 var t=localStorage.getItem('theme');if(t){r.setAttribute('data-theme',t);}
-var s=localStorage.getItem('sidebar');
-r.setAttribute('data-sidebar', s ? s : (window.matchMedia('(min-width: 62rem)').matches ? 'open' : 'closed'));
-}catch(e){r.setAttribute('data-sidebar','open');}})();</script>
+var s=localStorage.getItem('sidebar');if(s){r.setAttribute('data-sidebar',s);}
+}catch(e){}})();</script>

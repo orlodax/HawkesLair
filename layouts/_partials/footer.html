@@ -23,13 +23,16 @@
 
   // ---- sidebar ----
   var sideBtn = document.querySelector('[data-sidebar-toggle]');
-  if (sideBtn) {
-    var sync = function () {
-      sideBtn.setAttribute('aria-expanded', root.getAttribute('data-sidebar') !== 'closed');
-    };
+  var sidebar = document.querySelector('.site-sidebar');
+  if (sideBtn && sidebar) {
+    // Read actual visibility rather than the attribute: the default comes
+    // from CSS, so the attribute may legitimately be absent.
+    var visible = function () { return !!sidebar.offsetParent; };
+    var sync = function () { sideBtn.setAttribute('aria-expanded', visible()); };
     sync();
+    window.addEventListener('resize', sync);
     sideBtn.addEventListener('click', function () {
-      var next = root.getAttribute('data-sidebar') === 'closed' ? 'open' : 'closed';
+      var next = visible() ? 'closed' : 'open';
       root.setAttribute('data-sidebar', next);
       sync();
       try { localStorage.setItem('sidebar', next); } catch (e) {}
