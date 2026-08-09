@@ -36,8 +36,13 @@ hugo --gc --minify
 
 ## Deploying
 
-Target: `https://orlodax.github.io/hawkeslair/` — a repo named `hawkeslair`
+Target: `https://orlodax.github.io/HawkesLair/` — a repo named `HawkesLair`
 under the `orlodax` account.
+
+**The repo name and `baseURL` are coupled.** GitHub Pages serves a project
+site at `/<repo-name>/`, case included, so renaming the repo without updating
+`baseURL` leaves the site live but unstyled with dead links. Both must change
+together, plus `[params.giscus] repo`.
 
 1. Create the repo and push `main`.
 2. **Settings → Pages → Source → GitHub Actions** (not a branch).
@@ -53,7 +58,7 @@ and 404s on every link. So:
 
 | file | environment | `baseURL` |
 |---|---|---|
-| `hugo.toml` | production (`hugo`) | `https://orlodax.github.io/hawkeslair/` |
+| `hugo.toml` | production (`hugo`) | `https://orlodax.github.io/HawkesLair/` |
 | `config/development/hugo.toml` | development (`hugo server`) | `http://localhost:1313/` |
 
 Hugo picks the right one automatically. If you ever move to a root domain,

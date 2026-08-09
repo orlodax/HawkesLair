@@ -39,4 +39,4 @@ sei fra loro e vuoi che il tuo venga rimosso, scrivimi e lo tolgo.
 ## Contatti
 
 Per qualsiasi cosa riguardi questa pagina o i tuoi dati, apri una issue sul
-[repository del sito](https://github.com/orlodax/hawkeslair).
+[repository del sito](https://github.com/orlodax/HawkesLair).

@@ -3,7 +3,7 @@
 # with a root baseURL in config/development/hugo.toml — otherwise every asset
 # and link would carry the /hawkeslair/ prefix while the dev server serves
 # from the root, and the whole site renders unstyled with 404 links.
-baseURL = "https://orlodax.github.io/hawkeslair/"
+baseURL = "https://orlodax.github.io/HawkesLair/"
 title = "Hawke's Lair"
 locale = "it-IT"
 defaultContentLanguage = "it"
@@ -45,7 +45,7 @@ disableKinds = []
 
   [params.giscus]
     enable = false          # flip to true after enabling Discussions on the repo
-    repo = "orlodax/hawkeslair"
+    repo = "orlodax/HawkesLair"
     repoId = ""             # from https://giscus.app
     category = "Comments"
     categoryId = ""
