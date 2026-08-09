@@ -1,6 +1,6 @@
 ---
 title: Scynt - Insurgency
-date: '2026-08-01T20:07:35+01:00'
+date: '2026-01-28T20:07:35+01:00'
 slug: scynt-insurgency
 layout: single
 categories:

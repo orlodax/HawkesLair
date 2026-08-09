@@ -1,12 +1,13 @@
 ---
 title: The Cat Reversibility Theorem
-date: '2026-08-01T20:14:45+01:00'
+date: '2025-06-15T20:14:45+01:00'
 slug: the-cat-reversibility-theorem
 layout: single
 cover: cover-c1ecc427-6879-4599-8731-7c2bd31e3cc4.jpg
 postLang: en
 aliases:
 - /2026/08/01/the-cat-reversibility-theorem/
+- /2026/the-cat-reversibility-theorem/
 wp_original: https://orlotech.netsons.org/2026/08/01/the-cat-reversibility-theorem/
 ---
 
