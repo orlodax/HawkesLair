@@ -1,31 +1,40 @@
-{{/* The sidebar is the archive: 22 years of posts mapped over time, with a
-     bar showing each year's share so the 2010-2011 peak is visible at a
-     glance. Collapsible, and collapsed by default on narrow screens. */}}
+{{/* The sidebar is the whole archive: every year expandable to its posts.
+     The most recent year is open by default, and so is the year of the post
+     being read, so you always see where you are. */}}
 
 {{- $posts := where site.RegularPages "Section" "posts" -}}
 {{- $byYear := $posts.GroupByDate "2006" -}}
-{{- $max := 1 -}}
-{{- range $byYear }}{{ if gt (len .Pages) $max }}{{ $max = len .Pages }}{{ end }}{{ end -}}
+{{- $newest := "" -}}
+{{- range first 1 $byYear }}{{ $newest = .Key }}{{ end -}}
+{{- $here := "" -}}
+{{- if and .IsPage (eq .Section "posts") }}{{ $here = .Date.Format "2006" }}{{ end -}}
 
 <aside class="site-sidebar" id="archive-nav">
-  <nav aria-label="Archive by year">
+  <nav aria-label="Archive">
     <h2 class="sidebar-heading">
       {{ len $posts }} posts
       <span class="sidebar-span">{{ (index (last 1 $posts) 0).Date.Format "2006" }}–{{ (index (first 1 $posts) 0).Date.Format "2006" }}</span>
     </h2>
 
-    <ul class="year-list">
-      {{- range $byYear }}
-      {{- $n := len .Pages }}
-      <li>
-        <a href="{{ (printf "%s#%s" (site.GetPage "/archive").RelPermalink .Key) }}">
-          <span class="year-label">{{ .Key }}</span>
-          <span class="year-bar" style="{{ printf "--w:%d%%" (div (mul $n 100) $max) | safeCSS }}"></span>
-          <span class="year-count">{{ $n }}</span>
-        </a>
-      </li>
-      {{- end }}
-    </ul>
+    {{- range $byYear }}
+    {{- $key := .Key }}
+    <details class="year"{{ if or (eq $key $newest) (eq $key $here) }} open{{ end }}>
+      <summary>
+        <span class="year-chevron" aria-hidden="true">›</span>
+        <span class="year-label">{{ $key }}</span>
+        <span class="year-count">{{ len .Pages }}</span>
+      </summary>
+      <ul class="year-posts">
+        {{- range .Pages }}
+        {{- $title := .Title | default (.Summary | plainify | truncate 60) }}
+        <li>
+          <a href="{{ .RelPermalink }}" title="{{ $title }}"
+             {{- if eq .RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ $title }}</a>
+        </li>
+        {{- end }}
+      </ul>
+    </details>
+    {{- end }}
 
     <p class="sidebar-foot">
       <a href="{{ (site.GetPage "/archive").RelPermalink }}">Full archive →</a>

@@ -153,34 +153,61 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.
   color: rgba(255, 255, 255, 0.45);
 }
 
-.year-list { list-style: none; margin: 0; padding: 0; }
-.year-list a {
+/* Expandable year → its posts. */
+.year { border-top: 1px solid rgba(255, 255, 255, 0.07); }
+.year:first-of-type { border-top: 0; }
+
+.year > summary {
   display: grid;
-  grid-template-columns: 2.6rem 1fr 1.9rem;
+  grid-template-columns: 0.8rem 1fr auto;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.16rem 0;
-  color: rgba(255, 255, 255, 0.72);
+  gap: 0.4rem;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.8);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
 }
-.year-list a:hover { color: #fff; text-decoration: none; }
-.year-list a:hover .year-bar::before { background: var(--accent); }
+.year > summary::-webkit-details-marker { display: none; }
+.year > summary:hover { color: #fff; }
+.year > summary:focus-visible { outline: 1px solid var(--accent); outline-offset: 2px; }
 
-/* Relative volume per year, so the 2010-2011 peak is visible at a glance. */
-.year-bar {
-  display: block;
-  height: 0.5rem;
-  background: rgba(255, 255, 255, 0.08);
+.year-chevron {
+  display: inline-block;
+  transition: transform 0.15s ease;
+  color: rgba(255, 255, 255, 0.45);
 }
-.year-bar::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: var(--w);
-  background: rgba(255, 255, 255, 0.38);
+.year[open] > summary .year-chevron { transform: rotate(90deg); }
+@media (prefers-reduced-motion: reduce) { .year-chevron { transition: none; } }
+
+.year-label { font-weight: 700; }
+.year-count { color: rgba(255, 255, 255, 0.4); }
+
+.year-posts {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0 0 0 1.2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
 }
-.year-count { text-align: right; color: rgba(255, 255, 255, 0.45); }
+.year-posts li { margin: 0; }
+.year-posts a {
+  display: block;
+  padding: 0.16rem 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--step--1);
+  line-height: 1.35;
+  /* One line per post; the full text is in the title attribute. */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.year-posts a:hover { color: #fff; text-decoration: none; }
+.year-posts a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 700;
+}
 
 .sidebar-foot {
   margin: 1.2rem 0 0;
