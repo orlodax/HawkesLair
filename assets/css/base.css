@@ -130,10 +130,18 @@ a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 0.
 
 /* ---------- timeline ---------- */
 
-.timeline { display: flex; flex-direction: column; }
+/* Gap on the column rather than a margin on each entry: one value, no
+   collapsing, and nothing left dangling after the last item. */
+.timeline { display: flex; flex-direction: column; gap: clamp(3rem, 5vw + 1.5rem, 4.5rem); }
 .site-main > .wrap { padding-block: 2.5rem 4rem; }
 
-.entry { margin-bottom: var(--gap-lg); }
+.entry { margin-bottom: 0; }
+
+/* A full-width cover arriving straight after a line of excerpt reads as
+   cramped — the image is far heavier than the text above it. Entries that
+   lead with one get extra room to separate from the post before. */
+.entry:has(.entry-media) { margin-top: clamp(0.75rem, 2vw, 1.5rem); }
+.timeline > .entry:first-child { margin-top: 0; }
 
 .entry-meta {
   font-size: var(--step--1);
